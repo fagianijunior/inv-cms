@@ -1,0 +1,26 @@
+.single-post .opinion-post-template .top .tag {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--light-grey-2);
+}
+.opinion-post-template .top .author-top-area {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+.opinion-post-template .top .author-top-area .author-image {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.opinion-post-template .top .author-top-area .author-name {
+    text-decoration: none;
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 113.333% */
+}

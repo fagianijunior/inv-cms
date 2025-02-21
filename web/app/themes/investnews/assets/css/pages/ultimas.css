@@ -1,0 +1,352 @@
+body {
+  padding-top: 198px;
+}
+body.admin-bar {
+  padding-top: 165px;
+}
+@media (max-width: 1024px) {
+  body {
+    padding-top: 70px;
+  }
+  body.admin-bar {
+    padding-top: 40px;
+  }
+}
+
+/* Hide Trending on category page */
+#header-investnews > .container {
+  border-bottom: 1px solid var(--light-grey);
+}
+#header-investnews .trending {
+  display: none;
+}
+
+/* Category Title */
+.category-title {
+  margin-bottom: 40px;
+}
+
+.category-title h1 {
+  font-family: "Crimson Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 71.429% */
+  letter-spacing: -0.56px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.category-title > .container {
+  position: relative;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid var(--light-grey-2);
+}
+
+@media (max-width: 767px) {
+  .category-title h1 {
+    font-size: 34px;
+    font-style: normal;
+    line-height: 38px; /* 111.765% */
+    letter-spacing: -0.34px;
+    margin-top: 0px;
+  }
+}
+
+/* Sponsor area */
+.category-title .sponsor-area {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+}
+.sponsor-area .above-text {
+  display: block;
+  font-family: "Trebuchet MS";
+  color: var(--light-grey-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  margin-bottom: 16px;
+}
+.sponsor-area .company .link {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 16px;
+  text-decoration: none;
+}
+.sponsor-area .company .link .logo {
+  display: flex;
+}
+.sponsor-area .company .link .logo img {
+  width: auto;
+  height: 32px;
+}
+.sponsor-area .company .link .name {
+  margin-top: -6px;
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+}
+
+/* Category Featured */
+.category-featured-content {
+  display: grid;
+  grid-template-columns: 960px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.featured-post {
+  text-decoration: none;
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+}
+
+.featured-post::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #777777;
+  top: -15px;
+  opacity: 0;
+}
+
+.featured-post:last-child::before {
+  opacity: 0.4;
+}
+
+.featured-post.highlight {
+  grid-column: span 1;
+  grid-row: span 2;
+
+  display: flex;
+  gap: 28px;
+}
+
+.featured-post.highlight .featured-post-content {
+  width: 300px;
+}
+
+.featured-post.highlight .featured-post-content h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.featured-post.highlight .featured-post-content p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-image img {
+  object-fit: cover;
+  max-width: 640px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+.featured-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-content h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 16px 0;
+  color: #000000;
+}
+
+.featured-post-content p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #777777;
+}
+
+@media (max-width: 1290px) {
+  .category-featured-content {
+    grid-template-columns: 600px 1fr;
+  }
+
+  .featured-post.highlight {
+    flex-direction: column;
+  }
+
+  .featured-post.highlight .featured-post-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-investnews > .container {
+    border-bottom: unset;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-featured-content {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-post-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-post.highlight .featured-post-content h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .featured-post.highlight .featured-post-content p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .featured-post:not(:first-child)::before {
+    opacity: 0.4;
+  }
+}
+
+/* Category Second */
+.category-second-content {
+  display: grid;
+  grid-template-columns: 849px 1fr;
+  gap: 139px;
+}
+
+@media (max-width: 1290px) {
+  .category-second-content {
+    grid-template-columns: auto 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-second-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+}
+
+/* Category Posts */
+.category-posts-content hr {
+  margin: 32px 0;
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #777777;
+  opacity: 0.2;
+}
+
+.category-post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  display: flex;
+  gap: 28px;
+}
+
+.category-post-image {
+  max-width: 191px;
+  min-width: 191px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 125px;
+  background-color: #999999;
+}
+
+.category-post-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 125px;
+}
+
+.category-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.category-post-content h2 {
+  font-family: "Crimson Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+.category-post-content p {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+
+@media (max-width: 1024px) {
+  .category-title > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .category-title h1 {
+    margin-bottom: 0;
+  }
+  .category-title .sponsor-area {
+    position: relative;
+    bottom: unset;
+    right: unset;
+  }
+  .category-title .sponsor-area .container {
+    width: 100%;
+  }
+  .sponsor-area .company .link {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-post {
+    gap: 16px;
+  }
+  .category-post-image img,
+  .category-post-image {
+    max-width: 82px;
+    min-width: auto;
+    width: 82px;
+    height: 82px;
+  }
+}
+
+@media (max-width: 767px) {
+  .category-posts {
+    order: 1;
+  }
+  .category-post-content h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}

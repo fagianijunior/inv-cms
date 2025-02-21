@@ -1,0 +1,101 @@
+body.category-wsj #header-investnews + .category-title {
+  margin-top: 15px;
+}
+.navigation {
+  width: 100%;
+  padding: 0 0 24px 0;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation .empty {
+  display: none;
+  min-width: 283px;
+  visibility: hidden;
+}
+.navigation .featured {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none;
+}
+.navigation .featured-text {
+  color: var(--light-grey-2);
+  text-align: left;
+  font-family: "Crimson Text";
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.navigation .featured svg {
+  max-width: 100%;
+  width: 284px;
+  height: auto;
+}
+
+body.single .navigation {
+  padding: 0;
+  align-items: start;
+}
+
+body.single .navigation .featured-text {
+  text-align: left;
+}
+
+p.translate-in {
+  color: #777 !important;
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+p.translate-in b {
+  color: var(--black);
+}
+
+p.presented-nyse svg {
+  display: block;
+  padding: 13px 0 0 0;
+}
+
+p.presented-nyse {
+  color: #777 !important;
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+@media (min-width: 992px) {
+  body.category-wsj #header-investnews + .category-title {
+    margin-top: 0;
+  }
+
+  .navigation {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigation .empty {
+    display: block;
+  }
+  .navigation .featured-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    padding: 0 0 16px 0;
+  }
+
+  .navigation .featured {
+    width: 90%;
+  }
+}

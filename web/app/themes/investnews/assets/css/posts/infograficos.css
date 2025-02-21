@@ -1,0 +1,504 @@
+body.single-infograficos.single {
+  padding-top: 70px;
+}
+.top .container {
+  max-width: 628px;
+}
+.top .tag {
+  display: block;
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+  color: var(--light-grey-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.top .title {
+  font-feature-settings: "liga" off;
+
+  font-family: "Crimson Pro";
+  color: var(--black);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: -0.36px;
+  margin-bottom: 16px;
+}
+.top .excerpt {
+  font-family: "Trebuchet MS";
+  color: var(--light-grey-2);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.2px;
+  margin-bottom: 16px;
+}
+.top .author {
+  margin-bottom: 16px;
+}
+.top .author .by-text {
+  font-family: "Crimson Text";
+  color: var(--light-grey-2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.top .author .author-list .author-name,
+.top .author .author-list a {
+  text-decoration: none;
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.top .time-informations {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.top time {
+  font-family: "Crimson Text";
+  color: var(--light-grey-2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.top .reading-time {
+  display: flex;
+  gap: 8px;
+  color: var(--light-grey-2);
+}
+
+/* Share */
+.top .share {
+  position: relative;
+  width: 146px;
+  margin-top: 16px;
+}
+.top .share .share-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 146px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--light-grey-2);
+  border-radius: 4px;
+  transition: background-color 0.4s;
+}
+.top .share .share-button .icon svg path {
+  transition: fill 0.4s, stroke 0.4s;
+}
+.top .share .share-button .text {
+  font-family: "Crimson Text";
+  color: var(--light-grey-2);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 146.667% */
+  transition: color 0.4s;
+}
+.top .share .share-button .close {
+  display: none;
+}
+.top .share .share-button:hover {
+  cursor: pointer;
+  background-color: var(--purple);
+}
+.top .share .share-button:hover .icon svg path {
+  fill: var(--white);
+  stroke: var(--white);
+}
+.top .share .share-button:hover .text {
+  color: var(--white);
+}
+
+.top .share .share-options {
+  position: absolute;
+  top: calc(48px + 4px);
+  overflow: hidden;
+  max-height: 0;
+  height: 2000px;
+  background-color: #fff;
+  transition: max-height 0.8s;
+}
+.top .share.active .share-options {
+  max-height: 399px;
+}
+
+.top .share .share-options .option-list {
+  width: 146px;
+  border: 1px solid var(--light-grey-2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.top .share .share-options .option-list .option-item {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+  padding: 12px 18px;
+  box-sizing: border-box;
+}
+.top .share .share-options .option-list .option-item .option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+.top .share .share-options .option-list .option-item .option-name {
+  font-family: "Trebuchet MS";
+  color: var(--light-grey-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.top .share .share-options .option-list .option-item:hover {
+  cursor: pointer;
+}
+.single-post
+  .top
+  .share
+  .share-options
+  .option-list
+  .option-item:hover
+  .option-name {
+  color: var(--purple);
+}
+.single-post
+  .top
+  .share
+  .share-options
+  .option-list
+  .option-item:hover
+  .option-icon
+  svg
+  path {
+  fill: var(--purple);
+}
+
+/* Featured Image */
+.featured-image {
+  margin: 40px 0;
+}
+.featured-image img {
+  display: block;
+  max-width: 628px;
+  margin: auto;
+}
+
+/* Post content */
+.post-content > p,
+.post-content > .wp-block-heading,
+.post-content > figure,
+.post-content > blockquote,
+.post-content > div {
+  max-width: 628px;
+  margin: 40px auto 0;
+}
+.post-content > p strong {
+  font-weight: 700;
+}
+.post-content .wp-block-heading + p {
+  margin-top: 8px;
+}
+
+.post-content p {
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+  letter-spacing: -0.22px;
+}
+
+.post-content > div,
+.post-content > section,
+.post-content .wp-block-image {
+  margin: 40px auto 0;
+}
+
+.post-content .wp-block-embed iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 395px;
+}
+
+.related-tags {
+  max-width: 628px;
+  margin: 40px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--light-grey-2);
+}
+.related-tags .title {
+  font-family: "Crimson Pro";
+  color: var(--black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  margin-bottom: 16px;
+}
+.related-tags .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.related-tags .tag-list .tag-item {
+  min-width: 84px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Crimson Text";
+  color: var(--light-grey-2);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 146.667% */
+  padding: 12px;
+  border: 1px solid var(--light-grey-2);
+  border-radius: 4px;
+  transition: color 0.4s, border 0.4s;
+}
+.related-tags .tag-list .tag-item:hover {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.post-author-list {
+  max-width: 628px;
+  margin: 40px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--light-grey-2);
+}
+.post-author-list .author:not(:first-child) {
+  margin-top: 40px;
+}
+.post-author-list .author .top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 0;
+  margin-bottom: 16px;
+}
+.post-author-list .author .top .author-image,
+.post-author-list .author .top .author-name {
+  display: block;
+}
+.post-author-list .author .top .author-image img {
+  border-radius: 50%;
+}
+.post-author-list .author .top .author-name {
+  font-family: "Crimson Pro";
+  color: var(--black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  text-decoration: none;
+}
+.single-post
+  .post-author-list
+  .author
+  .author-informations
+  .author-description {
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+  margin-bottom: 16px;
+}
+.single-post
+  .post-author-list
+  .author
+  .author-informations
+  .author-social-links {
+  display: flex;
+  gap: 16px;
+}
+.single-post
+  .post-author-list
+  .author
+  .author-informations
+  .author-social-links
+  a {
+  text-decoration: none;
+}
+
+.link-copy-alert {
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  left: calc(50% - 75px);
+  bottom: -50vh;
+  background-color: #fff;
+  font-family: "Crimson Text";
+  text-align: center;
+  color: var(--purple);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  border: 1px solid var(--purple);
+  border-radius: 4px;
+  transition: bottom 0.4s;
+}
+.link-copy-alert.show {
+  bottom: 5vh;
+}
+.link-copy-alert .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.large-info {
+  padding: 40px 0 20px 0;
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 628px) {
+  .top .time-informations {
+    flex-wrap: wrap;
+  }
+  .top .time-informations .date-published {
+    width: 100%;
+  }
+  /* Share */
+  .top .share {
+    transition: unset;
+  }
+  .top .share .share-button {
+    transition: unset;
+  }
+  .top .share .share-button:hover {
+    background-color: #fff;
+  }
+  .top .share .share-button:hover .icon svg path {
+    fill: var(--light-grey-2);
+    stroke: var(--light-grey-2);
+  }
+  .top .share .share-button:hover .text {
+    color: var(--light-grey-2);
+  }
+  .top .share .share-options {
+    transition: unset;
+  }
+  .top .share .share-options .option-list {
+    transition: unset;
+  }
+
+  .top .share.active,
+  .top .share.active .share-button,
+  .top .share.active .share-options,
+  .top .share .share-options .option-list {
+    width: 100%;
+  }
+
+  body.share-active {
+    position: relative;
+    overflow: hidden;
+  }
+  .top .share.active {
+    width: calc(100% + 32px);
+    left: -16px;
+    z-index: 10;
+  }
+  .top .share.active:after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  .top .share.active .share-button {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 0;
+  }
+  .top .share.active .share-button .icon {
+    display: none;
+  }
+  .top .share.active .share-button .text {
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  .top .share.active .share-button .close {
+    display: block;
+  }
+  .top .share.active .share-options,
+  .top .share .share-options .option-list {
+    border: none;
+  }
+  .top .share.active .share-options {
+    top: calc(44px);
+  }
+  .top .share .share-options .option-list:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    left: 16px;
+    background-color: var(--light-grey-2);
+    max-width: calc(100% - 32px);
+  }
+  .link-copy-alert {
+    position: fixed;
+    z-index: 20;
+    bottom: -50vh;
+  }
+  .link-copy-alert.show {
+    bottom: 5vh;
+  }
+
+  /* Featured image */
+  .featured-image img {
+    max-width: 100%;
+  }
+  .post-content p,
+  .post-content .wp-block-heading,
+  .post-content figure {
+    max-width: 100%;
+    width: calc(100% - 32px);
+  }
+  .related-tags,
+  .post-author-list {
+    max-width: 100%;
+    width: calc(100% - 32px);
+  }
+  .related-tags .tag-list {
+    flex-wrap: wrap;
+  }
+  .post-author-list .container {
+    width: 100%;
+  }
+  .large-info {
+    padding: 40px 0 0 0;
+  }
+  body.single-infograficos.single {
+    padding-top: 45px;
+  }
+}

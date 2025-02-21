@@ -1,0 +1,82 @@
+.interviewees .container {
+  border-top: 0.5px solid #777777;
+  padding: 16px 0 0 0;
+}
+
+.interviewees-block h2 {
+  color: #000;
+  font-family: "Crimson Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+
+.interviewees-content h3 a {
+  color: #000;
+  font-family: "Crimson Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+}
+
+.interviewees-content span {
+  color: var(--IN---Site---Indigo, #50f);
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 16px 0 8px 0;
+  display: block;
+}
+
+.interviewees .swiper-button-prev:after,
+.interviewees .swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+.interviewees .swiper-button-next:after,
+.interviewees .swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+.interviewees .swiper-button-prev svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.interviewees .swiper-button-next svg {
+  width: 40px;
+  height: 40px;
+}
+
+.interviewees .swiper-button-prev,
+.interviewees .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  top: 101px;
+}
+
+.interviewees .swiper-button-prev {
+  left: 3px;
+}
+
+.interviewees .swiper-button-next {
+  right: 3px;
+}
+
+.interviewees-content img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 197px;
+}
+
+.interviewees span.swiper-notification {
+  display: none;
+}

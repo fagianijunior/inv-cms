@@ -1,0 +1,81 @@
+.social-media-embed {
+  margin: 30px 0;
+}
+
+.social-media-embed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.acf-block-preview .social-media-embed-container {
+  min-height: 100px;
+  background-color: #f0f0f0;
+}
+
+.social-media-embed-container iframe {
+  width: 100% !important;
+  min-height: 500px;
+  border: none !important;
+  overflow: hidden !important;
+  max-width: 552px; /* Maximum width of LinkedIn embeds */
+}
+
+/* fb post */
+.social-media-embed-container .fb-post,
+.social-media-embed-container .fb-post span,
+.social-media-embed-container .fb-post iframe {
+  max-width: 100%;
+}
+
+.social-media-embed-container .tiktok-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin-fallback {
+  padding: 20px;
+  border: 1px solid #0077b5;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.linkedin-fallback p {
+  margin-bottom: 10px;
+}
+
+.linkedin-fallback a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.linkedin-fallback a:hover {
+  background-color: #005e93;
+}
+
+@media (max-width: 767px) {
+  .social-media-embed-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .social-media-embed-container .fb_iframe_widget {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .social-media-embed-container .fb_iframe_widget span {
+    width: 99% !important;
+    margin: 0 auto;
+    display: block;
+  }
+}

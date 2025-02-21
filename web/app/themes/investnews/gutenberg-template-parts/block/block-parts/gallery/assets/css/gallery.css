@@ -1,0 +1,102 @@
+.gallery {
+    border-top: 1px solid var(--light-grey-2);
+    max-width: 628px;
+}
+.wp-block-group .wp-block-group__inner-container + .gallery {
+    border-top: unset;
+}
+.gallery .gallery-slider {
+    max-width: 628px;
+    margin: 0 auto;
+}
+.gallery .gallery-slider .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 16px;
+    margin-bottom: 16px;
+}
+.gallery .gallery-slider .header .title-area .section-title {
+    margin-top: 0;
+    color: var(--black);
+    font-family: "Crimson Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+}
+.gallery .gallery-slider .slider-count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+    bottom: 0;
+
+    font-family: "Crimson Pro";
+    color: var(--light-grey-2);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.28px; /* 113.667% */
+}
+.gallery .gallery-slider .swiper-wrapper .gallery-item img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 346px;
+}
+.gallery .gallery-slider .swiper-wrapper .gallery-item img.img-mobile {
+    display: none;
+}
+.gallery .gallery-slider .swiper-wrapper .gallery-item .item-caption {
+    margin-top: 16px;
+    color: var(--light-grey-2);
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.gallery .gallery-slider .slider-next ,
+.gallery .gallery-slider .slider-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: calc(0px - (40px / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery .gallery-slider .slider-next {
+    right: 10px;
+    left: auto;
+}
+.gallery .gallery-slider .slider-prev {
+    left: 10px;
+    right: auto;
+}
+@media(max-width: 600px) {
+    .gallery .gallery-slider .swiper-wrapper .gallery-item img {
+        height: 185px;
+    }
+    .gallery .gallery-slider .swiper-wrapper .gallery-item img.img-desk {
+        display: none;
+    }
+    .gallery .gallery-slider .swiper-wrapper .gallery-item img.img-mobile {
+        display: block;
+    }
+    .gallery .gallery-slider .slider-next, 
+    .gallery .gallery-slider .slider-prev {
+        top: calc(50% - 20px);
+    }
+}
+@media(max-width: 350px) {
+    .gallery .gallery-slider .header .title-area .section-title,
+    .gallery .gallery-slider .slider-count {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

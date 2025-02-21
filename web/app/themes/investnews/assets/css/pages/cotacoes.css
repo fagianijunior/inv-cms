@@ -1,0 +1,415 @@
+/* Fonts config */
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+.title-cotacoes {
+  margin-bottom: 12px
+}
+
+.table-cot {
+  flex-basis: 15%;
+  text-align: left
+}
+
+.title-cotacoes h2 {
+  font-weight: 600;
+  font-size: 16px
+}
+
+.title-cotacoes h2 span {
+  font-size: 10px
+}
+
+.numbers-cotacoes {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 12px
+}
+
+.number-trades {
+  color: #9f9f9f
+}
+
+.info-cotacoes {
+  display: flex
+}
+
+.info-cotacoes p {
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px
+}
+
+#graph-cot {
+  width: 100%
+}
+
+.number-cot {
+  background: #eee;
+  color: #000;
+  padding: 10px 7px;
+  border-radius: 48%;
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 10px
+}
+
+.indice {
+  display: block;
+  margin: 15px 0px 50px
+}
+
+.wrap-template-cotacoes-altas-baixas {
+  background: #eee
+}
+
+.div-display {
+  display: flex;
+  width: 100%;
+  padding: 70px 0px
+}
+
+.div-cot-baixas,
+.div-cot-trades,
+.div-cot-altas {
+  width: 33%
+}
+
+.title-cot-baixas,
+.title-cot-altas,
+.title-cot-trades {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  text-align: center
+}
+
+.title-cot-altas .fa-arrow-circle-up {
+  color: #57d9aa
+}
+
+.title-cot-baixas .fa-arrow-circle-down {
+  color: #ff5656
+}
+
+.title-cot-trades i {
+  color: #9f9f9f
+}
+
+.text-ibov {
+  margin: 48px 0px
+}
+
+.text-ibov p,
+.text-ibov h2 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-ibov .container h2 {
+  font-size: 24px;
+  padding-bottom: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.text-ibov .container p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.div-info-altas-baixas {
+  display: flex;
+  justify-content: center;
+  padding: 20px 70px;
+  border-bottom: 1px solid #d9d9d9;
+  text-align: center
+}
+
+
+@media screen and (max-width: 738px) {
+  .div-info-altas-baixas {
+    padding: 20px 10px
+  }
+}
+
+.div-info-altas-baixas p {
+  font-size: 16px
+}
+
+.div-info-altas-baixas>p:nth-child(1) {
+  flex: 1
+}
+
+.div-info-altas-baixas>p:nth-child(1) a {
+  color: #252525;
+  font-weight: bold
+}
+
+.div-info-altas-baixas>p:nth-child(2) {
+  margin: 0px;
+  flex: 1
+}
+
+.div-info-altas-baixas>p:nth-child(3) {
+  flex: 1
+}
+
+.text-bold {
+  font-weight: 800
+}
+
+@media screen and (max-width: 1094px) {
+  .div-display {
+    flex-direction: column
+  }
+
+  .title-cot-baixas,
+  .title-cot-trades {
+    margin-top: 50px
+  }
+
+  .div-cot-altas {
+    width: 100%
+  }
+
+  .div-cot-baixas {
+    width: 100%
+  }
+
+  .div-cot-trades {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .div-info-altas-baixas p {
+    width: 18%
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .div-info-altas-baixas p {
+    width: 28%
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .div-info-altas-baixas p {
+    width: 28%
+  }
+}
+
+/* Indices */
+.positive i {
+  color: #57d9aa;
+}
+
+.negative i {
+  color: #ff5656;
+}
+
+.indices-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.indices-ibov-details {
+  display: flex;
+}
+
+.indices-ibov-details h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.indices-ibov-details h3 {
+  display: block;
+}
+
+.indices-ibov-details p {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #252525;
+}
+
+.indices-ibov-details .variation {
+  font-size: 23px;
+  line-height: 35px;
+  margin-left: 15px;
+}
+
+.indices-ibov-details .variation.positive,
+.indices-ibov-details .variation.positive i {
+  color: #57d9aa;
+}
+
+.indices-ibov-details .variation.negative,
+.indices-ibov-details .variation.negative i {
+  color: #ff5656;
+}
+
+.indices-ibov-details .value {
+  font-size: 23px;
+  line-height: 35px;
+  margin-left: 15px;
+}
+
+.indices-ibov-close-open {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.indices-ibov-close-open span {
+  font-weight: bold;
+}
+
+.indices-search input[type=text] {
+  width: 250px;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  outline: 0;
+}
+
+.indices-graph-high-low {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.indices-ibov-graph,
+.indices-ibov-lows,
+.indices-ibov-highs,
+.indices-ibov-trades {
+  flex-basis: calc(33.33% - 40px);
+}
+
+.indices-ibov-graph {
+  padding-top: 20px;
+}
+
+.indices-ibov-highs h3,
+.indices-ibov-trades h3,
+.indices-ibov-lows h3 {
+  margin-bottom: 12px;
+}
+
+.indices-ibov-highs table,
+.indices-ibov-trades table,
+.indices-ibov-lows table {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.indices-ibov-highs table tr,
+.indices-ibov-trades table tr,
+.indices-ibov-lows table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.indices-ibov-highs table td,
+.indices-ibov-trades table td,
+.indices-ibov-lows table td {
+  padding: 9px 0;
+  font-size: 16px;
+}
+
+.indices-ibov-highs table td a,
+.indices-ibov-trades table td a,
+.indices-ibov-lows table td a {
+  color: #252525;
+}
+
+.indices-ibov-highs table td:nth-child(1),
+.indices-ibov-trades table td:nth-child(1),
+.indices-ibov-lows table td:nth-child(1) {
+  font-weight: bold;
+}
+
+.indices-ibov-highs table td:nth-child(2),
+.indices-ibov-trades table td:nth-child(2),
+.indices-ibov-lows table td:nth-child(2) {
+  text-align: center;
+}
+
+.indices-ibov-highs table td:nth-child(3),
+.indices-ibov-trades table td:nth-child(3),
+.indices-ibov-lows table td:nth-child(3) {
+  text-align: right;
+  color: #000;
+}
+
+.indices-ibov-highs table td:nth-child(2) {
+  color: #57d9aa;
+}
+
+.indices-ibov-lows table td:nth-child(2) {
+  color: #ff5656;
+}
+
+.indices-ibov-trades table td:nth-child(2),
+.indices-ibov-trades .highs-header i {
+  color: #9f9f9f;
+}
+
+.indices-delay-more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.indices-delay {
+  color: #888;
+}
+
+@media screen and (max-width: 792px) {
+  .indices-header {
+    justify-content: center;
+  }
+
+  .indices-ibov-details,
+  .indices-graph-high-low {
+    flex-direction: column;
+  }
+
+  .indices-ibov-details .variation,
+  .indices-ibov-details .value {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .indices-ibov {
+    text-align: center;
+  }
+
+  .indices-ibov-close-open {
+    margin-top: 15px;
+  }
+
+  .indices-ibov-graph {
+    padding-top: 0px;
+  }
+
+  .indices-ibov-highs,
+  .indices-ibov-trades,
+  .indices-ibov-lows {
+    margin: 30px 0 0 0;
+  }
+}

@@ -1,0 +1,249 @@
+/* Fonts config */
+p,
+span,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* aside-wrapper */
+.aside-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+}
+
+/* Trading Graph */
+.trading-graph iframe {
+  height: 800px !important;
+  overflow: hidden;
+}
+
+/* Text Ibov */
+.text-ibov h1,
+.text-ibov h2,
+.text-ibov h3,
+.text-ibov h4,
+.text-ibov h5,
+.text-ibov h6 {
+  color: #000;
+  font-family: "Crimson Text", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  margin: 10px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-ibov h2 {
+  font-size: 1.8rem
+}
+
+.text-ibov h3 {
+  font-size: 1.6rem
+}
+
+.text-ibov h4 {
+  font-size: 1.4rem
+}
+
+.text-ibov h5 {
+  font-size: 1.2rem
+}
+
+.text-ibov h6 {
+  font-size: 1rem
+}
+
+.text-ibov p {
+  color: #000;
+  display: block;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.text-ibov p a {
+  box-shadow: inset 0 -4px 0 #5500FF;
+  color: #000;
+  text-decoration: none;
+}
+
+.text-ibov p strong {
+  font-weight: bold;
+}
+
+.text-ibov ul,
+.text-ibov ul {
+  list-style: disc outside;
+  margin: 10px 0
+}
+
+.text-ibov li {
+  font-family: "Crimson Text", sans-serif;
+  padding: 5px 0px;
+  margin-left: 50px;
+  line-height: 1.55;
+  font-size: 1rem;
+}
+
+.text-ibov ol,
+.text-ibov ol {
+  list-style: decimal outside;
+  margin: 10px 0
+}
+
+@media (max-width: 479px) {
+  .text-ibov p {
+    font-size: 1rem;
+  }
+}
+
+/* Recent posts */
+
+.recent-posts h3 {
+  color: #303030;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 20px 0px 20px 0px;
+  font-family: "Crimson Text";
+  text-transform: uppercase;
+  position: relative;
+}
+
+.recent-posts h3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 80px;
+  top: 0;
+  background: #50f;
+  height: 1px;
+  z-index: 0;
+}
+
+.recent-posts-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.post-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item-thumb {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #000;
+  height: 180px;
+  overflow: hidden;
+}
+
+.post-item-thumb img {
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+}
+
+.post-item:hover .post-item-thumb img {
+  opacity: .8;
+}
+
+.post-item-tag span {
+  font-family: "Crimson Pro", sans-serif;
+  color: #777;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.2px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.post-item-content h2 {
+  font-family: "Crimson Text", sans-serif;
+  color: #222;
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: -0.384px;
+  margin: 7px 0 10px 0;
+  transition: all .3s ease;
+}
+
+.post-item:hover .post-item-content h2 {
+  opacity: .6;
+}
+
+.post-item-content p {
+  font-family: 'Crimson Text', sans-serif;
+  color: #555;
+  font-size: .95rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .aside-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .post-item-content h2 {
+    font-size: 1.1rem;
+  }
+  .post-item-content p {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .recent-posts-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .post-item-thumb {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recent-posts-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .post-item {
+    display: flex;
+    gap: 20px;
+  }
+
+  .post-item-thumb {
+    min-width: 80px;
+    max-width: 80px;
+    height: 95px;
+    margin-bottom: 0;
+  }
+
+  .post-item-content h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Newsletter */
+.newsletter-element {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,321 @@
+.error404 span.mvp-feat1-list-but {
+  color: #000000;
+}
+.error404 h2.title-h2 {
+  display: none;
+}
+.error404 .carteiras__newsletter {
+  margin-top: 0;
+}
+.display-br {
+  display: none;
+}
+.display-inline {
+  display: inline-block;
+}
+.container-conteudo {
+  margin: 55px 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.container-conteudo__busca h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 32px;
+}
+.container-conteudo__busca h1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container-conteudo__busca h1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 59px;
+  top: -16px;
+  background: #4b22f5;
+  height: 2px;
+  z-index: 0;
+}
+.container-conteudo__busca p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.container-conteudo__busca__input {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+}
+.container-conteudo__busca__input form {
+  width: 100%;
+  border-bottom: 1px solid #9b9b9b;
+  display: flex;
+}
+.container-conteudo__busca__input form#searchform button.button-search-input {
+  height: 100%;
+  color: #afafaf;
+  font-size: 18px;
+  position: initial;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container-conteudo__busca__input form#searchform input#s {
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  height: auto;
+  font-style: initial;
+}
+.container-conteudo__busca__button {
+  margin-top: 32px;
+}
+.container-conteudo__busca__button a button {
+  padding: 10px 40px;
+  border: none;
+  background-color: #000;
+  font-family: "Crimson Text";
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 214.286% */
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container-conteudo__busca__info {
+  margin-top: 32px;
+}
+.container-conteudo__busca__info h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-conteudo__busca__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-conteudo__img {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+.container-conteudo__img img {
+  height: fit-content;
+}
+.container-categorias {
+  margin: 0px 0px 48px;
+  display: inline-block;
+  width: 100%;
+}
+.container-categorias__title {
+  position: relative;
+  margin-bottom: 32px;
+}
+.container-categorias__title h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.container-categorias__title h2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container-categorias__title h2::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 59px;
+  top: -16px;
+  background: #50F;
+  height: 2px;
+  z-index: 0;
+}
+.container-categorias__cat {
+  display: grid;
+  margin-bottom: 32px;
+  grid-auto-rows: 56px;
+  grid-gap: 9px 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container-categorias__cat-h3 {
+  padding: 18px 40px;
+  background-color: #eeeeee;
+  border-radius: 28px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.container-categorias__cat-h3.guias {
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+}
+.container-categorias__cat-h3 a {
+  color: #000000;
+  font-weight: 300;
+}
+.container-categorias__cat-h3 a {
+  text-decoration: none;
+}
+.container-categorias__cat-h3 a h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .error404 ul.mvp-feat1-list-buts.left.relative:before {
+    display: none;
+  }
+  .error404 span.mvp-feat1-list-but {
+    display: none;
+  }
+  .error404 li.mvp-feat-col-tab {
+    position: relative;
+  }
+  .error404 h2.title-h2 {
+    display: block;
+    font-family: "Crimson Text";
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.28px;
+    text-transform: uppercase;
+  }
+  .error404 h2.title-h2::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .error404 h2.title-h2::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 59px;
+    top: -16px;
+    background: #50F;
+    height: 2px;
+    z-index: 0;
+  }
+  .title {
+    font-family: "Crimson Text";
+    color: #222;
+    font-size: 19.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.384px;
+  }
+  .error404 .carteiras__newsletter {
+    margin: 48px 0px 0px;
+  }
+  .display-br {
+    display: block;
+    height: 5px;
+  }
+  .container-conteudo {
+    flex-direction: row;
+    margin: 82px 0px 88px;
+  }
+  .container-conteudo__busca {
+    width: 100%;
+  }
+  .container-conteudo__busca h1 {
+    font-family: "Crimson Text";
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    margin-bottom: 16px;
+  }
+  .container-conteudo__busca p {
+    max-width: 800px;
+    font-family: "Crimson Text";
+    color: #444;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+  }
+  .container-conteudo__busca__input {
+    margin-top: 39px;
+    max-width: 343px;
+  }
+  .container-conteudo__busca__button {
+    margin-top: 48px;
+  }
+  .container-conteudo__busca__info {
+    margin-top: 48px;
+  }
+  .container-conteudo__busca__info h2 {
+    font-size: 18px;
+  }
+  .container-conteudo__busca__info p {
+    font-size: 18px;
+  }
+  .container-conteudo__img {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .container-categorias {
+    margin: 0px 0px 48px;
+  }
+  .container-categorias__cat {
+    grid-gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 0;
+  }
+}
+
+
+/* Posts */
+.post-item-content p {
+  display: none;
+}
+
+/* Search */
+#searchform input,
+input#s {
+  background: none;
+  border: none;
+  float: left;
+  font-weight: 300;
+  line-height: 1;
+  padding: 5px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+  color: #908f8fcc;
+  font-style: italic;
+  text-transform: initial;
+  line-height: 24px;
+  font-weight: 500;
+  height: auto;
+  font-style: initial;
+  font-size: 1rem;
+  font-family: 'Crimson Text', sans-serif;
+}
+
+input#s:focus {
+  outline: none;
+}
+
+.container-conteudo__busca__input form {
+  width: 100%;
+  border-bottom: 1px solid #9b9b9b;
+  display: flex;
+}
+

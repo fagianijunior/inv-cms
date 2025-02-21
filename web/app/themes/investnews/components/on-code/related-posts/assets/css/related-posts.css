@@ -1,0 +1,188 @@
+.related-posts .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--light-grey-2);
+}
+.related-posts .top .title {
+  font-family: "Crimson Pro";
+  color: var(--black);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 113.333% */
+}
+.related-posts .see-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.related-posts .see-all .text {
+  font-family: "Crimson Text";
+  color: var(--light-grey-2);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 146.667% */
+}
+.related-posts .see-all .icon {
+  height: 14px;
+}
+.related-posts .see-all.mobile {
+  display: none;
+}
+
+/* Post list */
+.related-posts .related-post-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 29px;
+}
+
+.related-posts .related-post-list .post-item .item-image {
+  margin-bottom: 16px;
+}
+
+.related-posts .related-post-list .post-item .item-image a {
+  display: block;
+  position: relative;
+  height: 197px;
+}
+
+.related-posts .related-post-list .post-item .item-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.related-posts .related-post-list .post-item .player-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 16px;
+  left: 16px;
+}
+.related-posts .related-post-list .post-item .player-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.related-posts .related-post-list .post-item .item-content .category {
+  margin-bottom: 8px;
+}
+
+.related-posts .related-post-list .post-item .item-content .category,
+.related-posts .related-post-list .post-item .item-content .category a {
+  display: block;
+  text-decoration: none;
+  color: var(--light-grey-2);
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.related-posts.categ_color
+  .related-post-list
+  .post-item
+  .item-content
+  .category,
+.related-posts.categ_color
+  .related-post-list
+  .post-item
+  .item-content
+  .category
+  a {
+  color: var(--purple);
+}
+
+.related-posts .related-post-list .post-item .item-content .title,
+.related-posts .related-post-list .post-item .item-content .title a {
+  text-decoration: none;
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+.related-posts.colored-bg + .related-posts.colored-bg {
+  margin-top: 0;
+}
+
+@media (min-width: 601px) {
+  .related-posts .related-post-list .post-item .mob-img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .single-post .top .title {
+    color: var(--IN---Site---Preto, var(--cores-marca-Preto-InvestNews, #000));
+    font-style: normal;
+    font-weight: 600;
+  }
+  .single-post .related-posts .top .see-all {
+    display: none;
+  }
+  .related-posts .see-all.mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .related-posts .related-post-list {
+    grid-template-columns: 1fr;
+  }
+
+  .related-posts .related-post-list .post-item {
+    display: flex;
+  }
+
+  .related-posts .related-post-list .post-item .item-image {
+    height: unset;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .related-posts .related-post-list .post-item .item-image a {
+    width: 86px;
+    height: 86px;
+  }
+  .related-posts .related-post-list .post-item .player-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+  }
+
+  .related-posts .related-post-list .post-item .reg-img {
+    display: none;
+  }
+
+  .related-posts .related-post-list .post-item .mob-img {
+    display: block;
+  }
+
+  .related-posts .related-post-list .post-item .item-image img.logo-img {
+    width: 86px;
+    height: 86px;
+    background-color: #000;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .related-posts .related-post-list .post-item .item-content {
+    width: calc(100% - (86px + 16px));
+  }
+
+  .related-posts .related-post-list .post-item .item-content .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,246 @@
+.author .about {
+    font-family: "Crimson Pro";
+}
+.author .about .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.author .about .author-image {
+    width: 250px;
+    height: 250px;
+}
+.author .about .author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.author .about .author-informations {
+    width: calc(100% - (250px + 40px));
+}
+.author .about .author-informations .author-name {
+    font-family: "Crimson Pro";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 71.429% */
+    letter-spacing: -0.56px;
+    margin: 24px 0;
+}
+.author .about .author-informations .author-description {
+    font-family: "Crimson Pro";
+    color: var(--light-grey-2);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.author .about .author-informations .author-social-links {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
+.author .about .author-informations .author-social-links a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Side areas */
+.author .side-areas > .container {
+    display: flex;
+    gap: 24px;
+}
+
+/* Posts by author - side */
+.author .posts-by-author {
+    width: calc(100% - (300px + 24px));
+}
+.author .posts-by-author .section-title {
+    font-family: "Crimson Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: -0.36px;
+    margin-bottom: 24px;
+} 
+
+
+/* Post list */
+.author .posts-by-author .post-list .post-item {
+    display: flex;
+    gap: 16px;
+}
+.author .posts-by-author .post-list .post-item .item-image {
+    margin-bottom: 16px;
+    max-width: 220px;
+    width: 100%;
+}
+
+.author .posts-by-author .post-list .post-item .item-image a {
+    display: block;
+    position: relative;
+    height: 150px;
+}
+
+.author .posts-by-author .post-list .post-item .item-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.author .posts-by-author .post-list .post-item .player-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 16px;
+    left: 16px;
+}
+.author .posts-by-author .post-list .post-item .player-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.author .posts-by-author .post-list .post-item .item-content {
+    max-width: calc(100% - (220px + 16px));
+}
+.author .posts-by-author .post-list .post-item .item-content .category {
+    margin-bottom: 8px;
+}
+
+.author .posts-by-author .post-list .post-item .item-content .category,
+.author .posts-by-author .post-list .post-item .item-content .category a {
+    display: block;
+    text-decoration: none;
+    color: var(--light-grey-2);
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.author .posts-by-author .post-list .post-item .item-content .title,
+.author .posts-by-author .post-list .post-item .item-content .title a {
+    text-decoration: none;
+    font-family: "Crimson Text";
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+}
+
+.author .posts-by-author .post-list .post-item .item-content .description,
+.author .posts-by-author .post-list .post-item .item-content .description a {
+    display: block;
+    margin: 8px 0;
+    text-decoration: none;
+    font-family: "Crimson Text";
+    color: var(--light-grey-2);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.18px;
+}
+
+/* Newsletter - side */
+.author .side-areas .newsletter {
+    width: 300px;
+}
+
+/* Categories */
+.author .categories {
+    margin-bottom: 40px;
+}
+.author .categories .title {
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+.author .categories .category-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+.author .categories .category-list .category-item {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Crimson Text";
+    color: var(--light-grey-2);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 12px;
+    border: 1px solid var(--light-grey-2);
+    border-radius: 4px;
+    transition: color 0.4s, border 0.4s;
+}
+.author .categories .category-list .category-item:hover {
+    color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+@media(max-width: 600px) {
+    .author .about .container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .author .about .author-image {
+        width: 150px;
+        height: 150px;
+    }
+    .author .about .author-image svg{
+        width: 100%;
+        height: 100%;
+    }
+    .author .about .author-informations {
+        width: 100%;
+        text-align: center;
+    }
+    .author .about .author-informations .author-name {
+        font-family: "Crimson Pro";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: -0.36px;
+    }
+    .author .about .author-informations .author-social-links {
+        justify-content: center;
+    }
+
+    /* Side areas */
+    .author .side-areas > .container {
+        flex-direction: column;
+    }
+    /* Posts by author - side */
+    .author .posts-by-author {
+        width: 100%;
+    }
+
+    .author .posts-by-author .post-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .author .posts-by-author .post-list .post-item {
+        flex-direction: column;
+    }
+    .author .posts-by-author .post-list .post-item .item-image,
+    .author .posts-by-author .post-list .post-item .item-content {
+        max-width: 100%;
+    }
+
+    .author .categories .category-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}

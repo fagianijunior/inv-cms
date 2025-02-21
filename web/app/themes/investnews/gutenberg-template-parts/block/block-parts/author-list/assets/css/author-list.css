@@ -1,0 +1,98 @@
+.author-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.author-list .content .section-header {
+    margin-bottom: 40px;
+}
+.author-list .content .section-header .section-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--light-grey-2);   
+}
+.author-list .content .section-header .section-title .content {
+    text-decoration: none;
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-feature-settings: 'liga' off;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 71.429% */
+    letter-spacing: -0.56px;
+}
+.author-list .content .section-header .section-description {
+    margin-top: 16px;
+    font-family: "Crimson Text";
+    color: var(--black);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 136.364% */
+    letter-spacing: -0.22px;
+}
+.author-list .content .section-header .section-description strong {
+    font-weight: 700;
+}
+
+.author-list .content .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 29px;
+}
+.author-list .content .list .author {
+    text-decoration: none;
+}
+.author-list .content .list .author .image {
+    max-width: 300px;
+    width: 100%;
+    height: 197px;
+    margin-bottom: 16px;
+}
+.author-list .content .list .author .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.author-list .content .list .author .name {
+    color: var(--black);
+    font-family: "Crimson Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+}
+@media(max-width: 900px) {
+    .author-list .content .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .author-list .content .section-header .section-title .content {
+        leading-trim: both;
+        text-edge: cap;
+        font-feature-settings: 'liga' off;
+        font-family: "Crimson Pro";
+        color: var(--black);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: -0.36px;
+    }
+    .author-list .content .list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 450px) {
+    .author-list .content .list .author .image {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+    .author-list .content .list .author .image img {
+        object-fit: unset;
+    }
+}

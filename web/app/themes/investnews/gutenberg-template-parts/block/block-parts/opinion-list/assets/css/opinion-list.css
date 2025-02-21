@@ -1,0 +1,124 @@
+.opinion-list {
+    margin: 40px 0;
+}
+.opinion-list .container {
+    padding-top: 16px;
+    border-top: 1px solid var(--light-grey-2);
+}
+.opinion-list .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.opinion-list .section-header .section-title {
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 113.333% */
+}
+.opinion-list .section-header .section-title .content {
+    text-decoration: none;
+    color: var(--black);
+}
+.opinion-list .section-header .see-all,
+.opinion-list .section-header .see-all .text {
+    text-decoration: none;
+    leading-trim: both;
+    text-edge: cap;
+    
+    font-family: "Crimson Text";
+    color: var(--light-grey-2);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+.opinion-list .section-header .see-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.opinion-list .section-header .see-all span {
+    display: block;
+}
+.opinion-list .section-header .see-all .icon {
+    height: 14px;
+}
+.opinion-list .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 28px;
+}
+.opinion-list .list .item {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 28px;
+}
+.opinion-list .list .item .image {
+    width: 82px;
+    height: 82px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.opinion-list .list .item .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.opinion-list .list .item .image .investnews-image {
+    object-fit: cover;
+}
+.opinion-list .list .item .content {
+    width: calc(100% - (82px + 28px));
+}
+.opinion-list .list .item .content .tag {
+    font-family: "Trebuchet MS";
+    color: var(--purple);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.opinion-list .list .item .content .title {
+    font-family: "Crimson Text";
+    color: var(--black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.2px;
+}
+@media(max-width: 1024px) {
+    .opinion-list .list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 600px) {
+    .opinion-list .list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .opinion-list .list .item {
+       flex-direction: row-reverse;
+       align-items: unset;
+       gap: 16px;
+    }
+    .opinion-list .list .item:not(:first-child) {
+        padding-top: 16px;
+        border-top: 1px solid var(--light-grey-4);
+    }
+    .opinion-list .list .item .image {
+        width: 40px;
+        height: 40px;
+    }
+    .opinion-list .list .item .content {
+        width: calc(100% - (40px + 16px));
+    }
+}

@@ -1,0 +1,11 @@
+.calculator-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.group-buttons {
+  align-items: end;
+}
+#calc-result-area {
+  display: none;
+}

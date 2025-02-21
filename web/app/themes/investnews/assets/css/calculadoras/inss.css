@@ -1,0 +1,122 @@
+.calculator-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.calculator-content .line-group,
+.calculator-content .form-group {
+  width: 100%;
+}
+
+.group-buttons {
+  align-items: end;
+}
+
+#btn-add-colaborador {
+  color: #000000;
+  font-weight: 300;
+}
+
+.calculator-table-area {
+  display: none;
+}
+
+#calc-result-area-mei td {
+  vertical-align: middle;
+}
+@media(max-width: 450px) {
+  .calculator-table-inss-values .table-mobile thead tr th,
+  .calculator-table-inss-values .table-mobile tbody tr td {
+      font-weight: 500;
+  }
+  .calculator-table-inss-values .table-mobile td[data-type="group-label"] {
+      background-color: #6F3475;
+      color: #fff;
+  }
+}
+
+
+/* INSS */
+.inss-title h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #470C4D;
+  margin-bottom: 8px;
+}
+
+.inss-title p {
+  margin-bottom: 24px;
+}
+
+.table-disclaimer {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  margin: 16px 0 24px;
+}
+
+.input-salario-bruto:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.calculator-table-inss-values .title {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+.calculator-table-inss-values table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 4px;
+  border: 1px solid #5B5B5B;
+}
+.calculator-table-inss-values table th,
+.calculator-table-inss-values table td {
+  padding: 8px;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.calculator-table-inss-values table th:not(:last-child),
+.calculator-table-inss-values table td:not(:last-child) {
+  border-right: 1px solid #5B5B5B;
+}
+.calculator-table-inss-values table>thead>tr:not(:last-child)>th,
+.calculator-table-inss-values table>thead>tr:not(:last-child)>td,
+.calculator-table-inss-values table>tbody>tr:not(:last-child)>th,
+.calculator-table-inss-values table>tbody>tr:not(:last-child)>td,
+.calculator-table-inss-values table>tfoot>tr:not(:last-child)>th,
+.calculator-table-inss-values table>tfoot>tr:not(:last-child)>td,
+.calculator-table-inss-values table>tr:not(:last-child)>td,
+.calculator-table-inss-values table>tr:not(:last-child)>th,
+.calculator-table-inss-values table>thead:not(:last-child),
+.calculator-table-inss-values table>tbody:not(:last-child),
+.calculator-table-inss-values table>tfoot:not(:last-child) {
+border-bottom: 1px solid #5B5B5B;
+}
+
+.calculator-table-inss-values table tr th {
+  text-align: left;
+  background-color: #470C4D;
+  color: #fff;
+}
+.calculator-table-inss-values table tr td {
+  color: #252525;
+}
+
+.calculator-table-inss-values table tr[row-label="total"] td {
+  color: #86027A;
+  font-weight: 500;
+}
+
+

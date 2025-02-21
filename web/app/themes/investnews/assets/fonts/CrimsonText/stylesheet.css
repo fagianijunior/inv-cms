@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'),
+        url('CrimsonText-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
+        url('CrimsonText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text Bold'), local('CrimsonText-Bold'),
+        url('CrimsonText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'),
+        url('CrimsonText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
+        url('CrimsonText-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'),
+        url('CrimsonText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

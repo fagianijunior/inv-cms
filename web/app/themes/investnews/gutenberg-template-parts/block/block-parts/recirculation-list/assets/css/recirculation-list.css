@@ -1,0 +1,48 @@
+.singular-post .recirculation-area .container {
+    max-width: 628px;
+    padding: 16px 0;
+    margin: 40px auto 0;
+}
+
+.recirculation-area .container {
+    border-top: 1px solid var(--light-grey-2);
+    border-bottom: 1px solid var(--light-grey-2);
+}
+.recirculation-area .container > .title {
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+    margin-bottom: 16px;
+}
+.recirculation-area .container .recirculation-list .list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.recirculation-area .container .recirculation-list .list-item:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--purple);
+    border-radius: 50%;
+}
+.recirculation-area .container .recirculation-list .list-item:not(:first-child) {
+    margin-top: 16px;
+}
+
+.recirculation-area .container .recirculation-list .list-item .item-title {
+    display: block;
+    width: calc(100% - 6px);
+    text-decoration: none;
+    font-family: "Crimson Text";
+    color: var(--purple);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.2px;
+}

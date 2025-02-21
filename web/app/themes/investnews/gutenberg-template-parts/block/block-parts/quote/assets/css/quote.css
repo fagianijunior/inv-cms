@@ -1,0 +1,27 @@
+.single-post .post-content .inv-quote {
+    max-width: 596px;
+}
+.inv-quote .content .text,
+.single-post .post-content .inv-quote .content .text {
+    font-family: "Crimson Pro";
+    color: var(--black);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 128.571% */
+}
+.inv-quote .source,
+.single-post .post-content .inv-quote .source {
+    margin-top: 8px;
+    font-family: "Trebuchet MS";
+    color: var(--light-grey-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+@media(max-width: 600px) {
+    .single-post .post-content .inv-quote {
+        max-width: calc(100% - 64px);
+    }
+}

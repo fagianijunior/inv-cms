@@ -1,0 +1,1395 @@
+.content-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 960px) 300px;
+  gap: 28px;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .content-wrap {
+    margin-bottom: 32px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Old Style*/
+.options-periodo input[type=radio i] {
+  display: none
+}
+
+.options-periodo.desktop {
+  padding-top: 18px;
+  min-width: 255px
+}
+
+.options-periodo.desktop .range-slider {
+  margin-top: 15px
+}
+
+.options-periodo label {
+  font-family: "Crimson Text",sans-serif;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2b2a2a
+}
+
+.options-periodo label {
+  background-color: transparent;
+  padding: 0
+}
+
+.options-periodo label span {
+  text-transform: uppercase;
+  color: #e6258b
+}
+
+.options-periodo label.duplo {
+  padding: 10px 12px
+}
+
+.options-periodo label.triplo {
+  padding: 10px
+}
+
+.options-periodo form {
+  padding-left: 20px
+}
+
+@media screen and (max-width: 1180px) {
+  .options-periodo label {
+      padding:10px 0
+  }
+
+  .options-periodo label.duplo {
+      padding: 7px 8px
+  }
+
+  .options-periodo label.triplo {
+      padding: 6px
+  }
+}
+
+.input-depositos {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px
+}
+
+.options-periodo label+input[type=radio i]:checked {
+  background-color: #000
+}
+
+.input-depositos.mensal {
+  margin-left: 30px
+}
+
+.input-depositos label {
+  font-family: "Crimson Text",sans-serif;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2b2a2a;
+  padding-bottom: 10px
+}
+
+.input-depositos input {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  border: transparent;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box
+}
+
+body.page-template-simuladores #mvp-post-head {
+  margin-bottom: 0
+}
+
+.calculator .invest-types {
+  width: 100%;
+  height: 38px;
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 40px 0
+}
+
+.calculator .invest-types:before,.calculator .invest-types:after {
+  content: "";
+  display: block;
+  clear: both
+}
+
+.calculator .invest-types .item {
+  float: left;
+  line-height: 38px;
+  width: 20%;
+  text-align: center;
+  font-family: "Crimson Text",sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #303030;
+  cursor: pointer
+}
+
+@media screen and (max-width: 770px) {
+  .calculator .invest-types {
+      margin-bottom:70px
+  }
+
+  .calculator .invest-types .item {
+      width: 33.3333333%
+  }
+}
+
+.calculator .invest-types .active {
+  border-bottom: 4px solid #e6258b;
+  height: 34px;
+  color: #e6258b
+}
+
+.calculator .form-section {
+  width: calc(100% - 290px);
+  float: left
+}
+
+.calculator .form-section.narrow {
+  width: calc(100% - 565px)
+}
+
+.calculator .form-section.full {
+  width: 100%
+}
+
+@media screen and (max-width: 950px) {
+  .calculator.investments .form-section.narrow {
+      width:100%;
+      margin: 0 16px
+  }
+}
+
+.calculator .form-section .row {
+  width: 100%;
+  margin: 0 -16px;
+  margin-bottom: 20px;
+  box-sizing: border-box
+}
+
+.calculator .form-section .row:after {
+  content: "";
+  display: block;
+  clear: both
+}
+
+.calculator .form-section .col {
+  float: left;
+  width: calc(50% - 32px);
+  margin: 0 16px;
+  box-sizing: border-box
+}
+
+.calculator .form-section.full .col {
+  float: left;
+  width: calc(25% - 32px);
+  margin: 0 16px;
+  box-sizing: border-box
+}
+
+@media screen and (max-width: 950px) {
+  .calculator .form-section .col.break-on-tablet {
+      width:calc(100% - 32px)
+  }
+
+  .calculator .form-section .col.break-on-tablet:not(:last-child) {
+      margin-bottom: 20px
+  }
+}
+
+.calculator .form-section .form-group {
+  margin: 0 0 16px 0
+}
+
+.calculator .form-section .form-group.custom-input input {
+  height: 2px
+}
+
+.calculator .form-section .form-group label,.calculator .form-section .form-group-checkbox label {
+  width: 100%;
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #252525;
+  margin: 0 0 8px 0;
+  font-family: "Crimson Text",sans-serif
+}
+
+.calculator .form-section .form-group label {
+  display: block
+}
+
+.calculator .form-section .form-group input {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  border: transparent;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box
+}
+
+.calculator .resume {
+  float: left;
+  width: 25%;
+  min-width: 250px;
+  background: #fff;
+  box-shadow: 0px 20px 50px rgba(0,0,0,.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+  z-index: 1
+}
+
+.calculator .resume.wide h2 {
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: #2b2a2a
+}
+
+.calculator .resume.wide .comparativo-investments {
+  display: flex
+}
+
+.calculator .resume.wide .title-results-investments {
+  padding-right: 13px;
+  margin-top: 100px;
+  width: 390px
+}
+
+.calculator .resume.wide .title-results-investments .title-results-investments__comparativos {
+  display: flex;
+  margin-bottom: 30px
+}
+
+.calculator .resume.wide .title-results-investments hr {
+  border-color: #eee;
+  box-sizing: border-box;
+  width: 42%
+}
+
+.calculator .resume.wide .title-results-investments p {
+  padding: 0px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #9f9f9f;
+  white-space: nowrap
+}
+
+.calculator .resume.wide .rendimento-investments__comparativos {
+  display: flex;
+  padding: 30px 0px 0px 20px;
+  width: 25%
+}
+
+.rendimento-investments__hr hr {
+  padding: 0px 10px 0px 70px
+}
+
+.calculator .resume.wide .rendimento-periodo-results .rendimento-investments__comparativos p {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #2b2a2a
+}
+
+.title-ganho-adicional {
+  margin-top: 25px
+}
+
+.hr-investments {
+  margin-top: 70px
+}
+
+.rendimento-investments__hr {
+  padding-top: 30px
+}
+
+.rendimento-periodo-results {
+  width: 100px
+}
+
+.rendimento-periodo-results.valor {
+  width: 130px
+}
+
+.calculator .resume.wide .rendimento-periodo-results.valor .rendimento-investments__comparativos {
+  padding: 30px 0px 0px 40px
+}
+
+.calculator .resume.wide .rendimento-periodo-results p {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.calculator .resume.taxa {
+  margin-right: 20px
+}
+
+.calculator .resume.wide {
+  width: 70%;
+  flex-grow: 1
+}
+
+@media screen and (max-width: 1010px) {
+  .range-slider {
+      margin-top:10px
+  }
+
+  .calculator .resume.taxa {
+      margin-right: 0px
+  }
+
+  .calculator .resume.wide {
+      width: 100%
+  }
+
+  .resume.taxa.desktop {
+      display: none
+  }
+
+  .modal-body .calculator .resume.taxa {
+      width: 100%;
+      overflow: scroll
+  }
+
+  .calculator .resume.wide .title-results-investments {
+      padding-right: 0;
+      margin-top: 100px;
+      width: 30%
+  }
+
+  .calculator .resume.wide .title-results-investments__comparativos {
+      font-size: 10px
+  }
+
+  .calculator .resume.wide .title-results-investments__comparativos hr {
+      display: none
+  }
+
+  .calculator .resume.wide .rendimento-investments__comparativos {
+      padding: 30px 0px 0px 15px
+  }
+
+  .calculator .resume.wide .title-results-investments p {
+      white-space: initial
+  }
+
+  .calculator .resume.wide .rendimento-periodo-results.valor .rendimento-investments__comparativos {
+      padding: 30px 0px 0px 10px
+  }
+
+  .rendimento-periodo-results.valor {
+      width: 40%
+  }
+
+  .calculator .resume.wide h3 {
+      font-size: 18px
+  }
+
+  .rendimento-periodo-results {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center
+  }
+
+  .calculator .resume.wide .rendimento-periodo-results p {
+      font-size: 8px
+  }
+
+  .modal-body .calculator {
+      margin-top: 0
+  }
+
+  .modal-body .calculator .resume.taxa p {
+      text-align: center
+  }
+
+  .btn-confirmar-taxas {
+      width: 100%;
+      background: linear-gradient(93.62deg, #91067c 0%, #e6258b 100%);
+      border-radius: 4px;
+      height: 40px;
+      display: block;
+      align-items: center;
+      text-align: center;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-top: 40px
+  }
+
+  .btn-voltar-taxas {
+      width: 100%;
+      background: #d9d9d9;
+      border-radius: 4px;
+      height: 40px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 30px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: #fff
+  }
+
+  .mvp-main-box.depositos {
+      display: block
+  }
+
+  .calculator.investments {
+      margin-bottom: 0
+  }
+
+  .form-depositos-investments {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #d9d9d9;
+      padding-right: 0;
+      display: flex;
+      justify-content: center
+  }
+
+  .modal-taxas-mobile {
+      display: block
+  }
+
+  .modal-taxas-mobile p a.btn-taxas {
+      margin-top: 20px
+  }
+
+  .modal-taxas-mobile p a:visited {
+      color: #fff
+  }
+
+  .modal-taxas-mobile .modal-body .calculator .resume.taxa {
+      background: none;
+      box-shadow: none;
+      padding: 26px;
+      margin-top: 20px
+  }
+
+  .modal-taxas-mobile .modal-body .calculator .resume.taxa form input {
+      height: auto
+  }
+
+  .modal-taxas-mobile .modal-body .calculator .resume.taxa .input-button input {
+      width: 90%;
+      padding: 10px
+  }
+
+  .options-periodo.mobile {
+      display: block;
+      margin: 20px 0px;
+      border-right: none
+  }
+
+  .options-periodo.desktop {
+      display: none
+  }
+
+  a.btn-taxas i {
+      padding-right: 10px
+  }
+
+  .total-investido {
+      background-color: transparent;
+      border-top: 1px solid #d9d9d9;
+      border-right: none
+  }
+
+  .total-investido .mobile {
+      display: block
+  }
+
+  .total-investido .desktop {
+      display: none
+  }
+
+  .total-investido p.mobile {
+      text-align: center;
+      position: relative;
+      padding-bottom: 0;
+      top: 10px
+  }
+}
+
+.calculator .resume .item {
+  font-size: 12px;
+  line-height: 14px
+}
+
+.calculator .resume .item:not(:last-child) {
+  margin-bottom: 24px
+}
+
+.calculator .resume .item:after {
+  display: block;
+  content: "";
+  clear: both
+}
+
+.calculator .resume .item .label {
+  float: left;
+  color: #9f9f9f;
+  max-width: 70%
+}
+
+.calculator .resume .item .value {
+  float: right;
+  font-weight: 600;
+  max-width: 30%
+}
+
+.calculator .resume .item-group {
+  width: 225px;
+  float: left
+}
+
+.calculator .resume .item-group .item.vertical .label {
+  display: block;
+  float: none;
+  font-family: "Crimson Text",sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px
+}
+
+.calculator .resume .item-group .item.vertical .value {
+  display: block;
+  float: none;
+  font-family: "Crimson Text",sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 100%;
+  min-height: 36px;
+  color: #2b2a2a
+}
+
+.calculator .resume .graphic-section {
+  height: 360px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.calculator .resume .graphic-section .percent {
+  width: 130px;
+  height: 130px;
+  border-radius: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-family: "Crimson Text",sans-serif;
+  font-size: 24px;
+  color: #252525;
+  background: #ededed;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  white-space: nowrap
+}
+
+.calculator .resume .graphic {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  justify-content: flex-end
+}
+
+.calculator .resume .graphic .graphic-legend-name {
+  font-family: "Crimson Text",sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b2a2a;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 0;
+  margin-top: 10px
+}
+
+.calculator .resume .graphic .graphic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+
+.investments-elipse {
+  margin-bottom: 20px;
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  overflow: hidden
+}
+
+@media screen and (max-width: 1180px) {
+  .investments-elipse {
+      margin-left:0
+  }
+}
+
+.calculator .resume.wide .investments-elipse p {
+  padding: 30px 0px 0px 11px;
+  color: #2b2a2a;
+  font-weight: 600;
+  font-size: 10px
+}
+
+.calculator .resume.taxa h2 {
+  font-family: "Poppins",sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  color: #2b2a2a;
+  padding-bottom: 10px;
+  font-weight: 600
+}
+
+.calculator .resume.taxa p {
+  font-family: "Crimson Text",sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000;
+  white-space: initial
+}
+
+.calculator .resume.taxa form {
+  display: flex;
+  flex-direction: column
+}
+
+.calculator .resume.taxa .resume-date {
+  font-weight: 800;
+  padding-left: 0;
+  font-size: 14px
+}
+
+.calculator .resume.taxa form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2b2a2a;
+  padding-bottom: 8px
+}
+
+.calculator .resume.taxa form input {
+  background: #eee;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  margin-bottom: 25px
+}
+
+.calculator .resume .over {
+  width: calc(100% - 20px);
+  max-height: 220px;
+  height: 50px;
+  background: linear-gradient(91.27deg, #91067c 0%, #e6258b 100%);
+  box-shadow: 0px 20px 20px rgba(0,0,0,.2);
+  border-radius: 4px 4px 0px 0px;
+  position: relative;
+  transition: all .5s ease-out
+}
+
+.calculator .resume .separator {
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #252525
+}
+
+.calculator .resume .under {
+  background: #d9d9d9;
+  border-radius: 0px 0px 4px 4px;
+  min-height: 50px;
+  width: calc(100% - 20px)
+}
+
+.calculator .resume.taxa form {
+  margin-top: 30px
+}
+
+.calculator .resume.taxa form .input-button {
+  background-color: #eee;
+  border-radius: 4px;
+  border: none;
+  height: 40px
+}
+
+.calculator .resume.taxa .input-button input {
+  background: none;
+  width: 100%;
+  padding-left: 10px
+}
+
+.calculator .resume.taxa form .input-button button {
+  padding: 13px 14px;
+  border: none;
+  position: relative;
+  bottom: 1px;
+  background-color: #eee;
+  border-radius: 4px
+}
+
+.calculator .resume.taxa form .input-button button:hover {
+  background-color: #d9d9d9
+}
+
+.calculator .help-section {
+  background: #fff;
+  transform: translate(0px, -120px);
+  width: 100vw;
+  position: relative;
+  z-index: 0
+}
+
+.help-text-footer {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 130%;
+  color: #9f9f9f
+}
+
+@media screen and (max-width: 950px) {
+  .calculator .help-section {
+      transform:none;
+      margin-top: 40px
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .calculator .help-section {
+      padding:0 50px
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hr-investments {
+      display:none
+  }
+
+  .calculator .resume.wide .title-results-investments p {
+      min-height: 30px
+  }
+
+  .calculator .resume.wide .rendimento-periodo-results .rendimento-investments__comparativos p {
+      min-height: 30px
+  }
+
+  .investments-elipse {
+      border: none;
+      margin-bottom: 0;
+      overflow: visible
+  }
+
+  .calculator .resume .graphic-section {
+      justify-content: space-between
+  }
+
+  .calculator .resume .graphic-container {
+      margin: 0;
+      width: 30px
+  }
+
+  .calculator .resume .graphic {
+      width: 30px
+  }
+
+  .calculator .resume .separator {
+      width: 80px
+  }
+
+  .calculator .resume .under {
+      margin: 0;
+      width: 30px;
+      min-width: 30px;
+      max-width: 30px;
+      margin-bottom: 15px
+  }
+
+  .calculator .resume .over {
+      margin: 0;
+      width: 30px;
+      max-width: 30px
+  }
+
+  .calculator .resume .graphic .graphic-legend-name {
+      transform: rotate(-90deg);
+      margin-top: 35px;
+      margin-bottom: 15px
+  }
+}
+
+.calculator .help-section .help-text {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 820px 60px 0
+}
+
+@media screen and (max-width: 768px) {
+  .calculator .help-section .help-text {
+      box-sizing:border-box;
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 80px 60px 0
+  }
+}
+
+.calculator .help-section .help-text .title {
+  font-family: "Crimson Text",sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #252525;
+  margin: 0 0 20px 0
+}
+
+.calculator .help-section .help-text ol {
+  margin-left: -40px;
+  margin-bottom: 10px
+}
+
+.calculator .help-section .help-text ol li {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 0 15px 0
+}
+
+.calculator .help-section .help-text ol li span.label {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background: #eee;
+  text-align: center;
+  margin: 0 10px 0 0;
+  display: inline-block
+}
+
+.calculator .help-section .help-text .help-footer {
+  color: #9f9f9f;
+  font-size: 12px
+}
+
+/* end */
+body.page-template-simuladores #mvp-main-body-wrap {
+  background: #fff;
+}
+
+body.page-template-simuladores #mvp-post-head {
+  margin-bottom: 38px;
+}
+
+@media(max-width:991px) {
+  body.page-template-simuladores #mvp-post-main .pre_hero {
+    margin-bottom: 40px;
+  }
+}
+
+.mvp-post-head-inner {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mvp-options-investments {
+  background-color: unset;
+  box-shadow: unset;
+  height: unset;
+}
+
+#mvp-post-content .mvp-options-investments .mvp-main-box.depositos,
+#mvp-post-content .mvp-main-box {
+  width: auto;
+}
+
+@media(max-width: 768px) {
+  #mvp-post-content .mvp-options-investments .mvp-main-box.depositos {
+    padding-top: 32px;
+    margin: 0;
+  }
+}
+
+
+.mvp-main-box.depositos,
+.mvp-main-box.depositos .form-depositos-investments {
+  flex-direction: column;
+}
+
+.input-depositos.mensal {
+  margin-left: unset;
+}
+
+.input-depositos .input-content,
+.input-depositos .input-content .button-group {
+  display: flex;
+  gap: 16px;
+}
+
+.input-depositos .input-content .button-group .input-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  border: none;
+  font-size: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.input-depositos .input-content .button-group .input-button:hover {
+  cursor: pointer;
+  background-color: #753CFF;
+}
+
+.input-depositos label {
+  @media(max-width: 768px) {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.input-depositos input {
+  background: #EEEEEE;
+  height: 50px;
+
+  @media(max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.calculator.investments {
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0 40px;
+}
+
+.calculator .resume {
+  float: unset;
+  width: 100%;
+}
+
+#resume-graphics {
+  width: 100%;
+  flex-grow: unset;
+  background: unset;
+  box-shadow: unset;
+  padding: 0;
+  z-index: 0;
+}
+
+.form-depositos-investments,
+.options-periodo,
+.total-investido {
+  text-align: unset;
+  border: none;
+  padding: 0;
+}
+
+.total-investido {
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid #DADADA;
+  background: #FFF;
+  box-shadow: 0px 20px 50px 5px rgba(0, 0, 0, 0.10);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2B2A2A;
+}
+
+.total-investido p.desktop,
+.total-investido .return-info #return-period {
+  padding: 0;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2B2A2A;
+}
+
+.total-investido .return-info #return-period {
+  font-weight: 600;
+}
+
+.total-investido p.desktop #total-investment {
+  color: #2B2A2A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.total-investido .return-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.total-investido .return-info #return-value {
+  color: #5500FF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+
+  @media(max-width: 1010px) {
+    display: block;
+    margin-top: 16px;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.total-investido .disclaimer {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #111;
+
+  @media(max-width: 1010px) {
+    text-align: center;
+  }
+}
+
+#period-range-area {
+  display: none;
+}
+
+.outline-btn {
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid #753CFF;
+  background-color: #753CFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.outline-btn:hover {
+  cursor: pointer;
+  background-color: #5500FF;
+  border: 1px solid #5500FF;
+  color: #fff;
+}
+
+#taxes-infos {
+  display: none;
+  color: unset;
+  padding-right: unset;
+  white-space: nowrap;
+  margin-top: 24px;
+  text-wrap: initial;
+}
+
+#taxes-infos .resume-date {
+  padding-left: unset;
+}
+
+#taxes-infos form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media(max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#taxes-infos form .input-item label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#taxes-infos form .input-item input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: var(--grey-2, #EEE);
+  padding: 13px 11px;
+  border: none;
+
+  @media(max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.disclaimer-text {
+  margin: 24px 0;
+  color: #777;
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.total-investido {
+  bottom: unset;
+  background-color: unset;
+}
+
+.total-investido .desktop {
+  @media(max-width: 1010px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.resume span {
+  padding-left: 0;
+}
+
+.calculator .resume .graphic-section {
+  display: flex;
+  flex-direction: column;
+  height: unset;
+}
+
+.calculator .resume .graphic {
+  align-items: flex-start;
+  padding-top: 0;
+
+  @media(max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.calculator .resume .graphic .graphic-legend-name {
+  display: flex;
+  gap: 8px;
+
+  @media(max-width: 600px) {
+    transform: rotate(0deg);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.calculator .resume .graphic .graphic-legend-name .legend-name {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #2b2a2a;
+  margin: 0;
+
+  @media(max-width: 600px) {
+    font-size: 12px;
+    transform: rotate(0);
+  }
+}
+
+.calculator .resume .graphic .content {
+  display: flex;
+  width: 100%;
+}
+
+.calculator .resume .graphic .graphic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calculator .resume .graphic .over {
+  width: 6px;
+  height: 38px;
+  border-radius: 0px 4px 4px 0px;
+  box-shadow: unset;
+  background: #636363;
+
+  @media(max-width: 600px) {
+    max-width: unset;
+  }
+}
+
+.calculator .resume .graphic.total .over {
+  background: #1EB980;
+}
+
+.calculator .resume .graphic.savings .over {
+  background: #12004A;
+}
+
+.calculator .resume .graphic .over.best {
+  background: #5500FF;
+}
+
+.calculator .resume .graphic .infos-area {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.calculator .resume .graphic .infos-area .value-money,
+.calculator .resume .graphic .infos-area .value-money span {
+  color: #252525;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.calculator .resume .graphic .infos-area .percent-area {
+  @media(max-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    justify-content: flex-end;
+  }
+}
+
+.calculator .resume .graphic .infos-area .percent-area .percent-description {
+  color: #636363;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.calculator .resume .graphic .infos-area .percent-area .percent-value {
+  color: var(--text-dark-up, #1EC87B);
+  font-family: Crimson Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mais_informacoes .large-table {
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media(max-width: 768px) {
+    overflow: scroll;
+  }
+}
+
+.mais_informacoes .large-table table {
+  width: 100%;
+  border: none;
+
+  @media(max-width: 768px) {
+    width: 900px;
+  }
+}
+
+.mais_informacoes .large-table table tr,
+.mais_informacoes .large-table table tr td {
+  height: unset !important;
+}
+
+.mais_informacoes .large-table table tr td {
+  padding: 8px 4px;
+}
+
+.mais_informacoes .large-table table tr:first-child td,
+.mais_informacoes .large-table table tr:not(:first-child) td[rowspan="3"] {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.mais_informacoes .large-table table tr:last-child td {
+  border-bottom: 1px solid #5B5B5B;
+}
+
+.mais_informacoes .large-table table tr:first-child td:not(:first-child),
+.mais_informacoes .large-table table tr:not(:first-child) td:not(:first-child) {
+  text-align: right;
+}
+
+.mais_informacoes .large-table table tr td {
+  color: #151515;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 11.7px */
+}
+
+.mais_informacoes .large-table table tr:first-child td {
+  background: #B1B1B1;
+  color: #000;
+  vertical-align: middle;
+}
+
+.mais_informacoes .large-table table tr td:first-child {
+  width: 110px;
+}
+
+.mais_informacoes .large-table table tr:not(:first-child) td[rowspan="3"] {
+  background-color: #E0DFE0;
+  color: #000;
+  vertical-align: middle;
+  text-align: center;
+}

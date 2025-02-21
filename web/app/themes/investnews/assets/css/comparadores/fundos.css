@@ -1,0 +1,72 @@
+.container--special-text {
+  margin-bottom: 20px
+}
+
+.special-text {
+  overflow: hidden;
+  position: relative;
+  margin: -20px auto 0;
+  transition: all 1s ease
+}
+
+.special-text:not(.expanded) {
+  max-height: 140px
+}
+
+.special-text:not(.expanded)::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(rgba(255, 255, 255, 0), white)
+}
+
+.special-text.expanded {
+  max-height: none;
+  max-width: 940px;
+  margin: 30px auto;
+}
+
+.special-text h1 {
+  font-size: 22px;
+  margin-bottom: 20px
+}
+
+.special-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px
+}
+
+.special-text h3 {
+  font-size: 18px;
+  margin-bottom: 15px
+}
+
+.special-text p {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px
+}
+
+.expand-button {
+  background: none;
+  border: 0;
+  display: block;
+  width: 200px;
+  padding: 0;
+  margin: .4rem auto;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000
+}
+
+.expand-button:hover {
+  color: #dc2784
+}
+
+.expand-button:focus {
+  outline: 0
+}

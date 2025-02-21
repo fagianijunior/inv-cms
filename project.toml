@@ -1,0 +1,13 @@
+[project]
+id = "com.investnews-nubank"
+name = "InvestNews - Nu Bank"
+version = "1.0.0"
+
+[build]
+builder = "heroku/buildpacks:20"
+
+[[build.buildpacks]]
+uri = "heroku/php"
+
+[[build.buildpacks]]
+uri = "heroku/procfile@1.0.1"

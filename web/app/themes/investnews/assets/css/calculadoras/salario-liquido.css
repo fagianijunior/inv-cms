@@ -1,0 +1,38 @@
+.calculator-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.group-buttons {
+  align-items: end;
+}
+
+#calculatorFormPJ,
+#calculatorFormMEI {
+  display: none;
+}
+
+.calculator-table-area {
+  display: none;
+}
+
+#calc-result-area-mei td {
+  vertical-align: middle;
+}
+
+@media(max-width: 450px) {
+  .calculator-content .group-buttons buttun {
+      width: 100%;
+  }
+
+  .calculator-table-area .table-mobile thead tr th,
+  .calculator-table-area .table-mobile tbody tr td {
+      font-weight: 500;
+  }
+
+  .calculator-table-area .table-mobile td[data-type="group-label"] {
+      background-color: #6F3475;
+      color: #fff;
+  }
+}

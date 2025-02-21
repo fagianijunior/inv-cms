@@ -1,0 +1,95 @@
+body.single.single-post {
+    padding-top: 38px !important;
+}
+body.single.single-post .special-post-template {
+    margin-top: 0 !important;
+}
+.special-post-template .top .special-top-area {
+    margin-bottom: 40px;
+}
+.special-post-template .top .special-top-area > .container {
+    max-width: 1288px;
+    display: flex;
+    border-bottom: 1px solid var(--light-grey-2);
+}
+.special-post-template .top .special-top-area .container .side {
+    width: 50%;
+}
+
+.special-post-template .top .special-top-area .container .content-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.special-post-template .top .special-top-area .container .content-side .content {
+    max-width: 410px;
+    width: 100%;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.special-post-template .top .special-top-area .container .image-side .featured-image {
+    margin-bottom: unset;
+    height: 100%;
+}
+.special-post-template .top .special-top-area .container .image-side .featured-image img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.special-post-template .top .special-top-area .container .image-side .featured-image-investnews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+}
+.special-post-template .top .special-top-area .container .image-side .featured-image-investnews svg {
+    width: 360px;
+    height: 64px;
+}
+
+.single-post .special-post-template .top .share {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.single-post .special-post-template .top .author {
+    margin-bottom: 0;
+}
+
+@media(max-width: 900px) {
+    .special-post-template .top .special-top-area {
+        margin-bottom: 24px;
+    }
+    .special-post-template .top .special-top-area .container {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .special-post-template .top .special-top-area .container .side {
+        width: 100%;
+    }
+
+    .special-post-template .top .special-top-area .container .image-side .featured-image {
+        height: 360px;
+    }
+
+    .special-post-template .top .special-top-area .container .content-side .content {
+        padding: 24px 0;
+        width: calc(100% - 32px);
+    }
+    .special-post-template .top .special-top-area .container .content-side .content .excerpt {
+        margin-bottom: 0;
+    }
+
+    .special-post-template .top .special-top-area .container .image-side .featured-image-investnews {
+        height: 360px;
+    }
+}
+@media(max-width: 600px) {
+    .single-post .special-post-template .top .share {
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,1 @@
+web: heroku-php-nginx -C support/nginx.conf -F support/fpm_custom.conf -i support/php.ini web

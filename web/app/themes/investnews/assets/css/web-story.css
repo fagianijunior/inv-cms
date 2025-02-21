@@ -1,0 +1,78 @@
+.web-stories .title-area .container {
+    margin: 40px auto;
+    padding: 40px 0;
+    border-top: 1px solid var(--light-grey-2);
+    border-bottom: 1px solid var(--light-grey-2);
+}
+.web-stories .title-area .container .title {
+    font-family: "Crimson Text";
+    color: var(--black);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    text-align: center;
+}  
+
+.web-stories .web-stories-list .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 29px;
+}
+.web-stories .web-stories-list .container .web-story-item {
+    text-decoration: none;
+}
+.web-stories .web-stories-list .container .web-story-item .featured-image {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 442px;
+}
+.web-stories .web-stories-list .container .web-story-item .featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.web-stories .web-stories-list .container .web-story-item .content .category {
+    font-family: "Crimson Text";
+    color: #777;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+.web-stories .web-stories-list .container .web-story-item .content .title {
+    color: var(--black);
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.web-stories .web-stories-list .container .web-story-item .content .excerpt {
+    color: #5b5b5b;
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.18px;
+    margin-top: 8px !important;
+}
+.web-stories .pagination-area {
+    margin-top: 40px;
+}
+
+@media(max-width: 800px) {
+    .web-stories .web-stories-list .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 600px) {
+    .web-stories .web-stories-list .container {
+        grid-template-columns: 1fr;
+    }
+}

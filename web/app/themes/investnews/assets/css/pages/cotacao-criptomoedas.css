@@ -1,0 +1,486 @@
+/* Head */
+.head-criptomoedas-title {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 24px 0;
+
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.head-criptomoedas-title h1 {
+    color: #000;
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+/* Content */
+.post-content-wrap-criptomoedas {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 30px;
+    width: 100%;
+}
+
+@media (max-width: 792px) {
+    .post-content-wrap-criptomoedas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tabs Criptomoedas */
+.tabs-cripto {
+    width: 100%;
+    margin: 20px 0;
+}
+
+ul#tabs-cripto-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+ul#tabs-cripto-nav li {
+    display: inline-block;
+    font-weight: bold;
+    margin: 15px 10px 20px;
+    padding: 0 0 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul#tabs-cripto-nav li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+ul#tabs-cripto-nav li:hover a,
+ul#tabs-cripto-nav li.active a {
+    color: #000;
+}
+
+ul#tabs-cripto-nav li:hover:after,
+ul#tabs-cripto-nav li.active:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+
+    background: rgb(147, 7, 125);
+    background: -moz-linear-gradient(90deg,
+            rgba(147, 7, 125, 1) 0%,
+            rgba(228, 37, 139, 1) 100%);
+    background: -webkit-linear-gradient(90deg,
+            rgba(147, 7, 125, 1) 0%,
+            rgba(228, 37, 139, 1) 100%);
+    background: linear-gradient(90deg,
+            rgba(147, 7, 125, 1) 0%,
+            rgba(228, 37, 139, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93077d", endColorstr="#e4258b", GradientType=1);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tab-content {
+    background-color: #fff;
+    overflow-x: auto;
+    padding: 5px;
+}
+
+/* Tabelas Criptomoedas */
+#tabela_criptos {
+    box-shadow: 0 0 0 1px #cdcdcd;
+    /* this draws the table border  */
+    border-radius: 5px;
+}
+
+#tabela_criptos th,
+#tabela_criptos td {
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+#tabela_criptos th,
+#tabela_criptos td {
+    border-left: 0;
+    border-right: 0;
+    padding: 15px;
+}
+
+#tabela_criptos th:first-child,
+#tabela_criptos td:first-child {
+    text-align: left;
+}
+
+#tabela_criptos th:last-child,
+#tabela_criptos td:last-child {
+    text-align: right;
+}
+
+#tabela_criptos tr:last-child td {
+    border: 0;
+}
+
+#tabela_criptos tr td a {
+    text-transform: uppercase;
+    color: #86027a;
+    font-weight: 600;
+}
+
+#tabela_criptos tr td .positive {
+    color: #1eb980;
+}
+
+#tabela_criptos tr td .negative {
+    color: #e54040;
+}
+
+#tabela_criptos tr th {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    color: #636363;
+}
+
+@media screen and (max-width: 450px) {
+    ul#tabs-cripto-nav li {
+        max-width: 90px;
+        line-height: 20px;
+    }
+}
+
+/* Tabela Responsiva */
+table.tabela-responsiva {
+    /*border-collapse: collapse;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+    box-shadow: 0 0 0 1px #cdcdcd;
+    border-radius: 5px;
+}
+
+table.tabela-responsiva thead, #mvp-content-main thead, #mvp-content-main tbody tr, .mvp-post-add-main tbody tr {
+    background: transparent !important;
+}
+
+table.tabela-responsiva tr {
+    padding: .35em;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+table.tabela-responsiva tr th:first-child {
+    text-align: left;
+    padding-left: 14px !important;
+}
+
+table.tabela-responsiva tr td:first-child {
+    text-align: left;
+    margin-left: 16px;
+}
+
+table.tabela-responsiva th,
+table.tabela-responsiva td {
+    padding: .625em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.tabela-responsiva th {
+    text-transform: uppercase;
+
+    color: #636363;
+    font-family: 'Crimson Text';
+    font-weight: 400;
+    font-size: 12px;
+    align-items: center;
+    padding: 9px 2px !important;
+}
+
+table.tabela-responsiva tbody a {
+    text-decoration: none;
+}
+
+table.tabela-responsiva tbody a, a:visited {
+    color: #86027A;
+}
+
+table.tabela-responsiva#mvp-content-main th {
+    padding: 1em 0.625em;
+}
+
+
+table.tabela-responsiva td {
+    font-family: 'Crimson Text';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #636363;
+}
+
+table.tabela-responsiva td[data-label="Nome"] {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #86027A;
+}
+
+table.tabela-responsiva .positive {
+    color: #1EB980;
+}
+
+table.tabela-responsiva .negative {
+    color: #E54040;
+}
+
+table.tabela-responsiva tbody tr:last-child {
+    border-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    table.tabela-responsiva {
+        border: 0;
+        border-radius: 0;
+    }
+
+    table.tabela-responsiva thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table.tabela-responsiva tr {
+        display: block;
+        padding: 8px 12px 8px 12px;
+    }
+
+    table.tabela-responsiva td {
+        display: block;
+        text-align: right;
+        padding: 0 1.5% 0 1.5% !important;
+    }
+
+    table.tabela-responsiva td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table.tabela-responsiva
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: 300;
+    }
+
+    table.tabela-responsiva td:first-child::before {
+        content: '';
+    }
+
+    table.tabela-responsiva tr td:first-child {
+        margin-left: 0;
+    }
+
+    table.tabela-responsiva td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Toggles */
+.item_tab {
+    font-family: "Crimson Text", sans-serif;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 15%);
+    border-radius: 3px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.item_tab .accordion {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    padding: 24px;
+    justify-content: space-between;
+}
+
+.item_tab button.accordion.active {
+    background: #fafafa;
+}
+
+.item_tab .accordion h2 {
+    font-family: "Crimson Text";
+    width: 80%;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 32px;
+    color: #111;
+}
+
+.item_tab .accordion .icon {
+    width: 16px;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    filter: invert(10%) sepia(99%) saturate(7212%) hue-rotate(265deg) brightness(93%) contrast(125%);
+}
+
+.item_tab .accordion .icon.desactive {
+    display: none;
+}
+
+.item_tab .panel {
+    display: none;
+    padding: 0px 24px 24px;
+    background: #fafafa;
+}
+
+.item_tab .panel p {
+    font-size: 16px !important;
+    line-height: 24px;
+    font-weight: 400 !important;
+}
+
+.item_tab .panel a {
+    color: #000;
+    box-shadow: inset 0 -4px 0 #5500FF;
+    text-decoration: none;
+}
+
+.item_tab .accordion.active .icon.minus.desactive {
+    display: block;
+}
+
+.item_tab .accordion .icon.desactive {
+    display: none;
+}
+
+.item_tab .accordion.active .icon.plus {
+    display: none;
+}
+
+.item_tab .panel p {
+    padding: 8px 0;
+}
+
+.table_desktop {
+    display: none;
+}
+
+.table_mobile {
+    display: block;
+}
+
+.item_tab .panel ul {
+    list-style: disc;
+    padding: 4px 18px;
+}
+
+.item_tab .panel ol {
+    list-style: auto;
+    padding: 4px 18px;
+}
+
+.item_tab .panel ul li,
+.item_tab .panel ol li {
+    padding: 4px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 450px) {
+    .item_tab .accordion h2 {
+        font-size: 18px !important;
+        line-height: 24px;
+    }
+}
+
+/* Notícias Relacionadas */
+.post-related-news-title {
+    font-size: 25px !important;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.post-related-news-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.post-related-news-inner a {
+    text-decoration: none;
+}
+
+.post-related-news-inner a:hover .related-news-title {
+    color: var(--purple);
+}
+
+.related-news-item {
+    overflow: hidden;
+}
+
+.related-news-img img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.related-news-text {
+    padding: 15px 0;
+}
+
+.related-news-cat-date {
+    margin-bottom: 8px;
+    color: var(--light-grey-2);
+    font-size: 12px;
+}
+
+.related-news-title {
+    font-size: 19px;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.related-news-text p {
+    color: var(--light-grey-2);
+}
+
+@media (max-width: 1024px) {
+    .post-related-news-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .post-related-news-inner {
+        grid-template-columns: 1fr;
+    }
+}

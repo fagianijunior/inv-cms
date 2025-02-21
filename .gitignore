@@ -1,0 +1,58 @@
+# Application
+web/app/plugins/
+!web/app/plugins/.gitkeep
+
+web/app/mu-plugins/
+!web/app/mu-plugins/advanced-custom-fields-pro
+!web/app/mu-plugins/admin-menu-editor-pro
+!web/app/mu-plugins/wp-rocket
+
+web/app/themes/twentytwentyfour/
+web/app/upgrade
+
+web/app/uploads/
+!web/app/uploads/.gitkeep
+
+web/app/cache/
+
+web/app/languages
+!web/app/languages/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+!web/app/mu-plugins/wp-rocket/vendor
+
+
+# WP-CLI
+wp-cli.local.yml
+
+# macOS
+.DS_Store# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+
+# Devenv
+.composer/
+.envrc
+devenv.lock
+devenv.nix
+devenv.yaml

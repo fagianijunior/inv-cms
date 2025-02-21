@@ -1,0 +1,376 @@
+.post-head-criptonews {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.head-criptonews-title {
+    display: flex;
+}
+
+.head-criptonews-title h1 {
+    color: #000;
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.select-acao {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    color: #444;
+    line-height: 1em;
+    margin-left: 20px;
+    padding: 12px 32px 12px 15px;
+    max-width: 100%;
+    max-height: 40px;
+    box-sizing: border-box;
+    border-radius: 5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #eee;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23202020%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.2em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+
+.select-acao::-ms-expand {
+    display: none;
+}
+
+.select-acao:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.select-acao:focus {
+    outline: none;
+}
+
+.select-acao option {
+    font-weight: normal;
+}
+
+.one-option {
+    background-image: none;
+    padding: 1em 1.2em 0.9em 1.2em;
+}
+
+.one-option:hover {
+    background-color: #eee;
+    cursor: inherit;
+}
+
+.main-acao-data {
+    padding: 0 20px 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-acao-data-criptonews {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.main-acao-data span {
+    display: block;
+    line-height: 28px;
+}
+
+.box-acao-valor {
+    margin-left: 20px;
+}
+
+span.acao-valor {
+    font-size: 40px !important;
+    line-height: 32px;
+}
+
+span.acao-valor-desc {
+    font-size: 16px;
+}
+
+.acao-valor .arrow-up,
+.acao-valor .arrow-down {
+    display: none;
+}
+
+.box-acao-diff,
+.box-acao-min,
+.box-acao-max {
+    margin-left: 40px;
+}
+
+.acao-valor-desc,
+.acao-diff-desc,
+.acao-min-desc,
+.acao-max-desc {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.acao-valor,
+.acao-diff,
+.acao-min,
+.acao-max {
+    font-size: 30px;
+}
+
+.acao-valor,
+.acao-diff {
+    font-weight: bold;
+}
+
+.acao-diff.positive {
+    color: #57d9aa;
+}
+
+.acao-diff.negative {
+    color: #ff5656;
+}
+
+.acao-min,
+.acao-max {
+    font-weight: 300;
+}
+
+.acao-info {
+    width: 42%;
+}
+
+.acao-info td {
+    padding: 5px 0;
+}
+
+.arrow-up {
+    width: 56px;
+    height: 56px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NiA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjgiIGN5PSIyOCIgcj0iMjgiIGZpbGw9IiM1N0Q5QUEiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yOS4wOTkzIDE4LjYwMjRMMjkuMDk5MyAzOUwyNi44NzcgMzlMMjYuODc3IDE4LjYwMjRMMjkuMDk5MyAxOC42MDI0WiIgZmlsbD0iI0ZGRkZGRiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE3IDI4LjIxOEwyNi40Mjg2IDE4LjYwMjVMMjggMjAuMjA1MUwxOC41NzE0IDI5LjgyMDZMMTcgMjguMjE4WiIgZmlsbD0iI0ZGRkZGRiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTM3LjQyODYgMjkuODIwN0wyNi40Mjg2IDE4LjYwMjZMMjggMTdMMzkgMjguMjE4MUwzNy40Mjg2IDI5LjgyMDdaIiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.arrow-down {
+    width: 56px;
+    height: 56px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NiA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjgiIGN5PSIyOCIgcj0iMjgiIHRyYW5zZm9ybT0icm90YXRlKDE4MCAyOCAyOCkiIGZpbGw9IiNGRjU2NTYiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zOSAyNy43ODE5TDI5LjU3MTQgMzcuMzk3NEwyOS41NzE0IDM3LjM5NzRMMjggMzlMMTcgMjcuNzgxOUwxOC41NzE0IDI2LjE3OTNMMjYuOTAwMiAzNC42NzMyTDI2LjkwMDIgMTdMMjkuMTIyNiAxN0wyOS4xMjI2IDM0LjY1TDM3LjQyODYgMjYuMTc5M0wzOSAyNy43ODE5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+body.page-template-page-acao ul.mvp-related-posts-list li {
+    height: auto !important;
+    margin-bottom: 20px;
+}
+
+/* Content */
+.post-content-criptonews-inner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.content-criptonews-top,
+.content-criptonews-main {
+    margin-bottom: 30px;
+}
+
+.content-criptonews-top h2,
+.content-criptonews-main h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-criptonews-top p,
+.content-criptonews-main p {
+    color: #000;
+    display: block;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.content-criptonews-top a,
+.content-criptonews-main a {
+    color: #000;
+    box-shadow: inset 0 -4px 0 var(--purple);
+    text-decoration: none;
+}
+
+.content-criptonews-top a:hover,
+.content-criptonews-main a:hover {
+    color: var(--purple);
+}
+
+.wp-block-embed__wrapper iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+    height: auto;
+}
+
+.content-criptonews-top ul,
+.content-criptonews-main ul {
+    margin-bottom: 20px;
+}
+
+.content-criptonews-top ul li,
+.content-criptonews-main ul li {
+    display: block;
+    padding: 6px 20px;
+}
+
+#tradingview_4a903 {
+    height: 450px;
+}
+
+/* Related Posts Criptomoedas */
+.related-posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.related-posts-inner {
+    padding: 30px 0;
+}
+
+.related-posts-title {
+    color: var(--darker-grey);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0;
+}
+
+.related-posts-title:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 80px;
+    top: 0;
+    background: #50f;
+    height: 1px;
+    z-index: 0;
+}
+
+.related-post-item {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+}
+
+.related-post-item:hover .related-post-item-title {
+    color: var(--purple);
+}
+
+.related-post-image {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+}
+
+.related-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-post-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.related-post-image:hover .overlay {
+    opacity: 1;
+}
+
+.related-post-item-title {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 792px) {
+    .post-content-criptonews-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .main-acao-data {
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .acao-desc {
+        text-align: left;
+    }
+
+    .box-acao-arrow {
+        display: none !important;
+    }
+
+    .acao-valor .arrow-up,
+    .acao-valor .arrow-down {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+    }
+
+    .box-acao-valor,
+    .box-acao-diff,
+    .box-acao-min,
+    .box-acao-max {
+        margin-left: 0px;
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    .main-acao-data-criptonews .box-acao-valor,
+    .main-acao-data-criptonews .box-acao-diff {
+        width: 100%;
+    }
+
+    .acao-info {
+        width: auto;
+        text-align: left
+    }
+
+    .related-posts-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,14 @@
+.off-grid-image img {
+    display: block;
+    margin: 0 auto;
+}
+.off-grid-image .image-caption {
+    max-width: 628px;
+    margin: 16px auto 0;
+    font-family: "Trebuchet MS";
+    color: var(--light-grey-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}

@@ -1,0 +1,180 @@
+/* config left column, title and section */
+
+.content-middle h2,
+.content-middle h2 a {
+  color: var(--black);
+  font-family: "Crimson Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  text-decoration: unset;
+  padding: 0 0 16px 0;
+  display: block;
+}
+
+.content-middle .d-grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 28px;
+}
+
+.featured-post-middle .img-current {
+  width: 100%;
+  height: 467px;
+  display: block;
+}
+
+.featured-post-middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.middle-page .d-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.content-middle {
+  padding-top: 16px;
+  border-top: 1px solid var(--light-grey-2);
+}
+
+.featured-post-middle a.category {
+  display: block;
+  margin: 16px 0;
+  text-decoration: unset;
+  color: var(--light-grey-2);
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.featured-post-middle a.title {
+  color: var(--black);
+  font-family: "Crimson Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: unset;
+}
+
+/* config right column*/
+
+.posts-middle-list .item-post {
+  display: flex;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid var(--light-grey-4);
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.posts-middle-list .item-post .item-thumb {
+  width: 100%;
+  height: 82px;
+  max-width: 82px;
+  display: block;
+}
+
+.posts-middle-list .item-post .item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts-middle-list .item-post:last-child {
+  border-bottom: 0px solid transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.posts-middle-list .item-post .conent-post a {
+  text-decoration: unset;
+  color: var(--black);
+  font-family: "Crimson Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.posts-middle-list .item-post .conent-post a.category {
+  display: block;
+  color: var(--light-grey-2);
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* config components on code*/
+
+.components-side {
+  width: 100%;
+  max-width: 300px;
+}
+
+.ads span {
+  color: var(--light-grey-2);
+  text-align: center;
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+}
+
+.ads {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* itens mobile */
+
+@media (max-width: 767px) {
+  .content-middle {
+    padding: 16px 0 0 0;
+  }
+  .content-middle .d-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .middle-page .d-flex {
+    flex-direction: column;
+  }
+  .featured-post-middle {
+    border-bottom: 1px solid var(--light-grey-4);
+    padding-bottom: 24px;
+  }
+  .featured-post-middle img {
+    height: 200px;
+  }
+  .featured-post-middle a.title {
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .content-middle h2 a {
+    padding: 0 0 24px 0;
+  }
+  .components-side {
+    max-width: 100%;
+  }
+  .posts-middle-list .item-post:last-child {
+    margin: 0 0 16px 0;
+  }
+  .middle-page .d-flex {
+    gap: 0;
+  }
+  .featured-post-middle .img-current {
+    height: auto;
+  }
+}

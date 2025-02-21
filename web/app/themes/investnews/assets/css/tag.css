@@ -1,0 +1,344 @@
+/* Hide Trending on category page */
+#header-investnews > .container {
+  border-bottom: 1px solid var(--light-grey);
+}
+#header-investnews .trending {
+  display: none;
+}
+
+/* tag Title */
+.tag-title {
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0 !important;
+}
+
+.tag-title h1 {
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.tag-title > .container {
+  position: relative;
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid var(--light-grey-2);
+}
+
+@media (max-width: 767px) {
+  .tag-title h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+/* Sponsor area */
+.tag-title .sponsor-area {
+}
+.sponsor-area .above-text {
+  display: block;
+  color: var(--light-grey-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 499;
+  line-height: 14px; /* 100% */
+  margin-bottom: 10px;
+  font-family: "Trebuchet MS";
+  /* 100% */
+}
+.sponsor-area .company .link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  text-decoration: none;
+}
+.sponsor-area .company .link .logo {
+  display: flex;
+}
+.sponsor-area .company .link .logo img {
+  width: auto;
+  height: 32px;
+}
+.sponsor-area .company .link .name {
+  font-family: "Crimson Text";
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+}
+
+/* tag Featured */
+.tag-featured-content {
+  display: grid;
+  grid-template-columns: 960px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.featured-post {
+  text-decoration: none;
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+}
+
+.featured-post::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #777777;
+  top: -15px;
+  opacity: 0;
+}
+
+.featured-post:last-child::before {
+  opacity: 0.4;
+}
+
+.featured-post.highlight {
+  grid-column: span 1;
+  grid-row: span 2;
+
+  display: flex;
+  gap: 28px;
+}
+
+.featured-post.highlight .featured-post-content {
+  width: 300px;
+}
+
+.featured-post.highlight .featured-post-content h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.featured-post.highlight .featured-post-content p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-image img {
+  object-fit: cover;
+  max-width: 640px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+.featured-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-content h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 16px 0;
+  color: #000000;
+}
+
+.featured-post-content p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #777777;
+}
+
+@media (max-width: 1290px) {
+  .tag-featured-content {
+    grid-template-columns: 600px 1fr;
+  }
+
+  .featured-post.highlight {
+    flex-direction: column;
+  }
+
+  .featured-post.highlight .featured-post-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-investnews > .container {
+    border-bottom: unset;
+  }
+}
+
+@media (max-width: 992px) {
+  .tag-featured-content {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-post-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-post.highlight .featured-post-content h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .featured-post.highlight .featured-post-content p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .featured-post:not(:first-child)::before {
+    opacity: 0.4;
+  }
+}
+
+/* tag Second */
+.tag-second-content {
+  display: grid;
+  grid-template-columns: 849px 1fr;
+  gap: 139px;
+}
+
+@media (max-width: 1290px) {
+  .tag-second-content {
+    grid-template-columns: auto 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tag-second-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+/* tag Posts */
+.tag-posts-content hr {
+  margin: 32px 0;
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #777777;
+  opacity: 0.2;
+}
+
+.tag-post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  display: flex;
+  gap: 28px;
+}
+
+.tag-post-image {
+  max-width: 191px;
+  min-width: 191px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 125px;
+  background-color: #999999;
+}
+
+.tag-post-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 125px;
+}
+
+.tag-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.tag-post-content h2 {
+  font-family: "Crimson Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #000000;
+  margin: 16px 0 23px;
+}
+
+.tag-post-content p {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+
+section.tag-title .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.tag-title .container .sponsor-area .container {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .tag-title > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start !important;
+    text-align: left;
+  }
+  .tag-title .sponsor-area {
+    position: relative;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: unset;
+    right: unset;
+  }
+  .sponsor-area .company .link {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .tag-post {
+    gap: 16px;
+  }
+  .tag-post-image img,
+  .tag-post-image {
+    max-width: 82px;
+    min-width: auto;
+    width: 82px;
+    height: 82px;
+  }
+  section.tag-title .container .sponsor-area .container {
+    width: 100%;
+  }
+
+  .sponsor-area .company .link {
+    justify-content: flex-start;
+  }
+  .tag-title {
+    margin: 0 auto;
+  }
+}

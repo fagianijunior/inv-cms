@@ -1,0 +1,211 @@
+/* Config */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#mvp-post-main {
+  margin: 0 0 64px;
+}
+
+#mvp-post-head .mvp-page-title {
+  font-weight: 700 !important;
+}
+
+/* Ferramentas */
+
+.ferramentas {
+  margin: 72px 0;
+}
+
+.ferramentas__wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Titulo */
+.ferramentas__titulo {
+  margin: 64px 0 32px;
+}
+
+.ferramentas__titulo a {
+  text-decoration: none;
+}
+
+.ferramentas__titulo h2 {
+  position: relative;
+  color: #151515;
+  font-family: "Crimson Text";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 32px; /* 114.286% */
+}
+
+.ferramentas__titulo h2::before {
+  content: '';
+  height: 2px;
+  background-color: #5500FF;
+  width: 59px;
+  position: absolute;
+  top: -20px;
+}
+
+/* Card */
+.card__item {
+  width: 100%;
+  max-width: 282px;
+  height: 226px;
+  padding: 15px;
+ 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: .3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.card__item:nth-child(odd) {
+  background-color: #5500ff !important;
+}
+.card__item:nth-child(even) {
+  background-color: #110054 !important;
+}
+
+
+@media (max-width: 600px) {
+  .card__item {
+      max-width: 100%;
+  }
+}
+
+.card__tag {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #636363;
+  color: #fff;
+  max-width: fit-content;
+  font-family: 'Crimson Pro';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__icon {
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card__type {
+  display: block;
+  
+  font-family: 'Crimson Text';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font-family: 'Crimson Pro';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+
+  color: #fff;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+}
+
+@media(max-width: 600px) {
+  .card__type {
+      font-size: 14px;
+      line-height: 19px;
+  }
+  .card__title {
+      font-size: 18px;
+      line-height: 30px;
+  }
+}
+
+/* Newsletters */
+
+.newsletter {
+  display: block;
+  margin-bottom: 64px;
+}
+
+/* Páginas | Simuladores, Calculadoras e Comparadores */
+body.page-template-page-simuladores .pre_hero,
+body.page-template-page-calculadoras .pre_hero,
+body.page-template-page-comparadores .pre_hero {
+  padding-bottom: 0;
+}
+
+/* AD */
+.mvp-flex-ad {
+  line-height: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  a {
+    display: block;
+  }
+}
+
+body.single .mvp-flex-ad {
+  margin: 0;
+}
+
+.ads_image_desktop {
+  display: block;
+  margin: auto;
+}
+.ads_image_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 792px) {
+  .mvp-flex-ad {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  body.page-template-page-cotacao-php .mvp-flex-ad {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .ads_image_desktop {
+    display: none;
+  }
+  .ads_image_mobile {
+    display: inline-block;
+  }
+}

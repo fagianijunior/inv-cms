@@ -1,0 +1,305 @@
+body.single-patrocinados {
+  padding-top: 70px;
+}
+
+.pagination a {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Category Title */
+.category-title {
+  margin-bottom: 40px;
+}
+
+.category-title h1 {
+  font-family: "Trebuchet MS";
+  font-size: 56px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.category-title hr {
+  border: none;
+  height: 1px;
+  opacity: 0.6;
+  background-color: #777777;
+}
+
+.bc-hero .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.bc-hero .d-flex h1 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .category-title h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+/* Category Featured */
+.category-featured-content {
+  display: grid;
+  grid-template-columns: 960px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.featured-post {
+  text-decoration: none;
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+}
+
+.featured-post::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #777777;
+  top: -15px;
+  opacity: 0;
+}
+
+.featured-post:last-child::before {
+  opacity: 0.4;
+}
+
+.featured-post.highlight {
+  grid-column: span 1;
+  grid-row: span 2;
+
+  display: flex;
+  gap: 28px;
+}
+
+.featured-post.highlight .featured-post-content {
+  width: 300px;
+}
+
+.featured-post.highlight .featured-post-content h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+}
+
+.featured-post.highlight .featured-post-content p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-image img {
+  object-fit: cover;
+  max-width: 640px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+.featured-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.featured-post-content h2 {
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 16px 0;
+  color: #000000;
+}
+
+.featured-post-content p {
+  font-family: "Trebuchet MS";
+  font-size: 18px;
+  line-height: 24px;
+  color: #777777;
+}
+
+@media (max-width: 1290px) {
+  .category-featured-content {
+    grid-template-columns: 600px 1fr;
+  }
+
+  .featured-post.highlight {
+    flex-direction: column;
+  }
+
+  .featured-post.highlight .featured-post-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-featured-content {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-post-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-post.highlight .featured-post-content h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .featured-post.highlight .featured-post-content p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .featured-post:not(:first-child)::before {
+    opacity: 0.4;
+  }
+}
+
+/* Category Second */
+.category-second-content {
+  display: grid;
+  grid-template-columns: 849px 1fr;
+  gap: 139px;
+}
+
+@media (max-width: 1290px) {
+  .category-second-content {
+    grid-template-columns: auto 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-second-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+}
+
+/* Category Posts */
+.category-posts-content hr {
+  margin: 32px 0;
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #777777;
+  opacity: 0.2;
+}
+
+.category-post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  display: flex;
+  gap: 28px;
+}
+
+.category-post-image {
+  max-width: 191px;
+  min-width: 191px;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 125px;
+  background-color: #999999;
+}
+
+.category-post-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 125px;
+}
+
+.category-post-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #777777;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.category-post-content h2 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #000000;
+  margin: 0 0 24px;
+}
+
+.category-post-content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Crimson Text";
+}
+
+span.page-numbers.current {
+  background: #777;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.pagination a {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+span.brand-top {
+  display: none;
+}
+
+body.archive.post-type-archive.tax-marcas {
+  padding-top: 69px;
+}
+
+@media (max-width: 992px) {
+  .category-post {
+    gap: 16px;
+  }
+  .category-post-image img,
+  .category-post-image {
+    max-width: 82px;
+    min-width: auto;
+    width: 82px;
+    height: 82px;
+  }
+  .category-title.bc-hero {
+    margin-top: 0px !important;
+  }
+  span.brand-top {
+    color: var(--IN---Site---Cinza-Escuro, #777);
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  body.archive.post-type-archive.tax-marcas {
+    padding-top: 100px;
+  }
+}
